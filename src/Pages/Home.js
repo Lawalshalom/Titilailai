@@ -1,0 +1,52 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { Fragment } from 'react';
+import "../App.css";
+import Header from "../Components/Homepage/Header";
+import About from "../Components/Homepage/About";
+import Partners from "../Components/Homepage/Partners";
+import Counts from "../Components/Homepage/Counts";
+import Services from "../Components/Homepage/Services";
+import Blog from "../Components/Homepage/Blog";
+import Stories from "../Components/Homepage/Stories";
+import Gallery from "../Components/Homepage/Gallery";
+import Team from "../Components/Homepage/Team";
+import Contact from "../Components/Homepage/Contact";
+import Footer from "../Components/Homepage/Footer";
+
+ class Home extends React.Component {
+  render() {
+    return (
+  <Fragment>
+      <Header />
+      <section id="hero" className="d-flex align-items-center">
+        <div className="container" data-aos="zoom-out-down" data-aos-delay="100">
+          <div className="animated order-2 order-lg-1 d-flex flex-column justify-content-center hero-img"
+            style={{backgroundImage: 'url("assets/img/chris-edited.png")'}}>
+            <h1 data-aos="fade-up"><span>SCM UI</span><br/>the abode of His presence!</h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">The Bible in one hand; the newspaper in the other!</h2>
+            <div data-aos="fade-up" offset="0" data-aos-delay="800">
+              <a href="#contact" className="btn-get-started scrollto">Join Us!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <main id="main">
+      <About />
+      <Partners />
+      <Counts />
+      <Services />
+      <Blog />
+      <Stories />
+      <Gallery />
+      <Team />
+      <Contact />
+    </main>
+    <Footer />
+    <a href="#" className="back-to-top"><i className="icofont-simple-up"></i></a>
+  </Fragment>
+    )
+  }
+}
+
+export default Home;

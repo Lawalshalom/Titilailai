@@ -1,0 +1,34 @@
+#belief .img {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 30vh;
+	width: 100vw;
+}
+#belief .img img {
+	position: relative;
+	width: 80%;
+	height: 60vh;
+}
+
+#belief .text h1 {
+	color: #fff;
+	position: relative;
+}
+#belief .text {
+	position: relative;
+	top: 23vh;
+}
+
+@media (max-width: 767px) {
+	#belief .img img {
+		position: relative;
+		width: 100%;
+		height: 40vh;
+	}
+
+	#belief .text {
+		position: relative;
+		top: 3vh;
+	}
+}
