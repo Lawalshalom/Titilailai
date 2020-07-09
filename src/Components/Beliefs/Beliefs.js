@@ -5,7 +5,7 @@ export default function Beliefs() {
     return (
         <section id="belief" className="belief">
         <div className="img" data-aos="fade-down">
-            <img src="assets/img/bible.jpg" alt="" />
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830161/bible_tqutcw.jpg" alt="" />
         </div>
         <div className="container text">
             <h1  data-aos="fade-right" data-aos-delay="100">What We Believe</h1>

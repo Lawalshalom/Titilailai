@@ -24,9 +24,10 @@ export default class Header extends React.Component {
         <div className="container d-flex align-items-center">
             <div className="logo mr-auto">
                 <h1 className="text-light"><Link to="/" target="_top">
-                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830204/scm-header_dxauov.png" alt="Header" className="img-fluid"/>
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830204/scm-header_dxauov.png" alt="header" className="img-fluid"/>
                 <span>  SCM UI</span></Link></h1>
             </div>
+
             <nav className="nav-menu d-none d-lg-block">
             <ul>
             <li ><Link to="/" target="_top">Home</Link></li>
@@ -43,11 +44,11 @@ export default class Header extends React.Component {
                             </li>
                     <li><Link to="/stories" target="_top">SCM Stories</Link></li>
                     <li><Link to="/sermon" target="_top">Sermon</Link></li>
-                    <li><Link to="/events" target="_top">Events</Link></li>
+                    <li className="active"><Link to="/events" target="_top">Events</Link></li>
                     </ul>
                 </li>
-                <li><Link to="/events">Services</Link></li>
-                <li className="active"><Link to="/Gallery" target="_top">Gallery</Link></li>
+                <li className="active"><Link to="/events">Services</Link></li>
+                <li><Link to="/Gallery" target="_top">Gallery</Link></li>
                 <li><Link to="/team" target="_top">Executives</Link></li>
                 <li><Link to="/give" target="_top">Give</Link></li>
                 <li><Link to="/#contact">Contact Us</Link></li>
@@ -63,6 +64,7 @@ export default class Header extends React.Component {
                 <li className="get-started"><Link to="/#contact">Join Us!</Link></li>
             </ul>
         </nav>
+
         </div>
         <div className="progress-container">
        <div className="progress-bar" id="myBar"></div>

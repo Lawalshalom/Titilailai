@@ -7,7 +7,7 @@ export default function Details() {
     <section id="give" className="give">
         <div className="container">
             <div className="img" data-aos="fade-down">
-                <img src="assets/img/give.jpg" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830259/give_n6p71i.jpg" alt="" />
             </div>
             <div className="text">
                 <h1  data-aos="fade-right" data-aos-delay="100">Give Back</h1>
@@ -23,18 +23,18 @@ export default function Details() {
                 <p>We are fundraising for a new vehicle for the fellowship, your donations will be highly appreciated.</p>
             </div>
             </div>
-            <div className="col-lg-6 bus-img"  data-aos="fade-left" data-aos-delay="200">
-            <img src="assets/img/hiace-bus-new.png" alt="" />
+            <div className="col-lg-6 bus-img"  data-aos="fade-left" data-aos-delay="300">
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830266/hiace-bus-new_crg4pk.png" alt="" />
             </div>
         </div>
 
 
         <div className="row">
-            <div className="col-lg-6 img-2"  data-aos="fade-up-right" data-aos-delay="300">
-            <img src="assets/img/give-section2.jpg" alt="" />
+            <div className="col-lg-6 img-2"  data-aos="fade-up-right" data-aos-delay="400">
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830260/give-section2_f7plca.jpg" alt="" />
             </div>
             <div className="col-lg-6 details text-center">
-            <div  data-aos="zoom-in" data-aos-delay="300">
+            <div  data-aos="zoom-in" data-aos-delay="500">
             <h3>Make a Difference</h3>
             <p>You can make your donations to the account below:</p>
             <br/>

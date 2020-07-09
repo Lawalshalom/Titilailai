@@ -21,9 +21,8 @@ import Footer from "../Components/Homepage/Footer";
       <section id="hero" className="d-flex align-items-center">
         <div className="container" data-aos="zoom-out-down" data-aos-delay="100">
           <div className="animated order-2 order-lg-1 d-flex flex-column justify-content-center hero-img"
-            style={{backgroundImage: 'url("assets/img/chris-edited.png")'}}>
+            style={{backgroundImage: 'url("https://res.cloudinary.com/lawfirm1000/image/upload/v1593830205/chris-edited_t6x81f.png")'}}>
             <h1 data-aos="fade-up"><span>SCM UI</span><br/>the abode of His presence!</h1>
-            <h2 data-aos="fade-up" data-aos-delay="400">The Bible in one hand; the newspaper in the other!</h2>
             <div data-aos="fade-up" offset="0" data-aos-delay="800">
               <a href="#contact" className="btn-get-started scrollto">Join Us!</a>
             </div>
@@ -43,7 +42,6 @@ import Footer from "../Components/Homepage/Footer";
       <Contact />
     </main>
     <Footer />
-    <a href="#" className="back-to-top"><i className="icofont-simple-up"></i></a>
   </Fragment>
     )
   }

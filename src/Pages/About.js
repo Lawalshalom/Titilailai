@@ -5,7 +5,8 @@ import Contact from "../Components/Homepage/Contact";
 import Footer from "../Components/Homepage/Footer";
 import "../App.css";
 
-export default function About() {
+export default class About extends React.Component {
+    render(){
     return (
         <>
         <Header />
@@ -14,4 +15,5 @@ export default function About() {
         <Footer />
         </>
     )
+}
 }

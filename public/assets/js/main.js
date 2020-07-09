@@ -95,29 +95,30 @@
 
   //scroll progress bar
   window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
 };
 
-// Back to top button
-$(window).scroll(function() {
-  if ($(this).scrollTop() > 100) {
-    $('.back-to-top').fadeIn('slow');
-  } else {
-    $('.back-to-top').fadeOut('slow');
-  }
-});
+  // Back to top button
+  $(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+    }
+  });
 
-$('.back-to-top').click(function() {
-  $('html, body').animate({
-    scrollTop: 0
-  }, 1500, 'easeInOutExpo');
-  return false;
-});
+  $('.back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+  });
 
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
@@ -127,13 +128,8 @@ $('.back-to-top').click(function() {
 
   // Porfolio isotope and filter
   $(window).scroll(function() {
-    var top_of_element = $("#portfolio").offset().top;
-    var bottom_of_element = $("#portfolio").offset().top + $("#portfolio").outerHeight();
-    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-    var top_of_screen = $(window).scrollTop();
-
-    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-      var portfolioIsotope = $('.portfolio-container').isotope({
+    if (window.location.pathname === "/" || "/gallery") {
+    var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
       });
@@ -153,6 +149,7 @@ $('.back-to-top').click(function() {
     } else {
         // the element is not visible, do something else
     }
+
 });
 
   // Initi AOS

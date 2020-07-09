@@ -6,6 +6,11 @@ import Belief from "./Pages/Belief";
 import Gallery from "./Pages/Gallery";
 import Team from "./Pages/Team";
 import Give from "./Pages/Give";
+import Stories from "./Pages/Stories";
+import Testimonies from "./Pages/Testimonies";
+import Confession from "./Pages/Confession";
+import Events from "./Pages/Events";
+import Sermon from "./Pages/Sermon";
 import Error from "./Error";
 export default class App extends React.Component {
     render(){
@@ -18,6 +23,11 @@ export default class App extends React.Component {
               <Route path="/gallery" component={Gallery} />
               <Route path="/team" component={Team} />
               <Route path="/give" component={Give} />
+              <Route path="/stories" component={Stories} />
+              <Route path="/testimonies" component={Testimonies} />
+              <Route path="/confessions" component={Confession} />
+              <Route path="/events" component={Events} />
+              <Route path="/sermon" component={Sermon} />
               <Route component={Error} />
           </Switch>
       </main>

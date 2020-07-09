@@ -28,132 +28,123 @@ export default class Gallery extends React.Component {
 
         <div className="col-lg-4 col-md-6 portfolio-item filter-snrfriend">
           <div className="portfolio-wrap">
-            <img src="assets/img/portfolio/seye-choir.jpg" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830222/seye-choir_vxzhv5.jpg" className="img-fluid" alt=""/>
             <div className="portfolio-info">
               <h4>Seye Maj'</h4>
               <p>Senior friends</p>
               <div className="portfolio-links">
-                <a href="assets/img/portfolio/seye-choir.jpg" data-gall="portfolioGallery" className="venobox" title="Seye Maj'"><i className="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-              </div>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830222/seye-choir_vxzhv5.jpg" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                </div>
             </div>
           </div>
         </div>
 
         <div className="col-lg-4 col-md-6 portfolio-item filter-events">
           <div className="portfolio-wrap">
-            <img src="assets/img/portfolio/isaac-choir.png" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830223/isaac-choir_qe8oto.png" className="img-fluid" alt=""/>
             <div className="portfolio-info">
               <h4>Havilla 2018</h4>
               <p>Events</p>
               <div className="portfolio-links">
-                <a href="assets/img/portfolio/isaac-choir.png" data-gall="portfolioGallery" className="venobox" title="Havilla 2018"><i className="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-              </div>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830223/isaac-choir_qe8oto.png" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                </div>
             </div>
           </div>
         </div>
 
         <div className="col-lg-4 col-md-6 portfolio-item filter-snrfriend">
           <div className="portfolio-wrap">
-            <img src="assets/img/portfolio/prof-saba.jpeg" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830272/prof-saba_ntqx3g.jpg" className="img-fluid" alt=""/>
             <div className="portfolio-info">
               <h4>Prof. & Rev. Mrs Saba</h4>
               <p>Senior Friends</p>
               <div className="portfolio-links">
-                <a href="assets/img/portfolio/prof-saba.jpeg" data-gall="portfolioGallery" className="venobox" title="Prof Saba"><i className="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-              </div>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830272/prof-saba_ntqx3g.jpg" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                </div>
             </div>
           </div>
         </div>
 
-        <div className="col-lg-4 col-md-6 portfolio-item filter-undergrads">
+        <div className="col-lg-4 col-md-6 portfolio-item filter-undergrads filter-events">
           <div className="portfolio-wrap">
-            <img src="assets/img/portfolio/lawfem-worship.jpg" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594164412/hallelujah-1_lqozmp.jpg" className="img-fluid" alt=""/>
             <div className="portfolio-info">
-              <h4>House Retreat 2019</h4>
-              <p>Undergrads</p>
+              <h4>Events</h4>
+              <p>Havilla '19</p>
               <div className="portfolio-links">
-                <a href="assets/img/portfolio/lawfem-worship.jpg" data-gall="portfolioGallery" className="venobox" title="House retreat 2019"><i className="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-              </div>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1594164412/hallelujah-1_lqozmp.jpg" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                </div>
             </div>
           </div>
         </div>
 
         <div className="col-lg-4 col-md-6 portfolio-item filter-snrfriend">
           <div className="portfolio-wrap">
-            <img src="assets/img/portfolio/immanuel.png" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830232/immanuel_thfkzw.png" className="img-fluid" alt=""/>
             <div className="portfolio-info">
               <h4>Immanuel Akerele</h4>
               <p>Senior friend</p>
               <div className="portfolio-links">
-                <a href="assets/img/portfolio/immanuel.png" data-gall="portfolioGallery" className="venobox" title="Immanuel Akerele"><i className="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-              </div>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830232/immanuel_thfkzw.png" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                </div>
             </div>
           </div>
         </div>
 
-        <div className="col-lg-4 col-md-6 portfolio-item filter-snrfriend">
+        <div className="col-lg-4 col-md-6 portfolio-item filter-undergrads filter-events">
           <div className="portfolio-wrap">
-            <img src="assets/img/portfolio/oga-chucks.jpeg" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594209730/evangeltainment-new_ghccba.png" className="img-fluid" alt=""/>
             <div className="portfolio-info">
-              <h4>Odili Chucks</h4>
-              <p>Senior Friend</p>
+              <h4>Events</h4>
+              <p>Evangeltainment</p>
               <div className="portfolio-links">
-                <a href="assets/img/portfolio/oga-chucks.jpeg" data-gall="portfolioGallery" className="venobox" title="Odili Chucks"><i className="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-              </div>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1594209730/evangeltainment-new_ghccba.png" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                </div>
             </div>
           </div>
         </div>
 
         <div className="col-lg-4 col-md-6 portfolio-item filter-events">
           <div className="portfolio-wrap">
-            <img src="assets/img/portfolio/hallelujah-rejoice.png" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594170988/finalists-3_t3u2op.png" className="img-fluid" alt=""/>
             <div className="portfolio-info">
-              <h4>Hallelujah choir</h4>
-              <p>Havilla 2018</p>
+              <h4>Events</h4>
+              <p>Finalists Thanksgiving '20</p>
               <div className="portfolio-links">
-                <a href="assets/img/portfolio/hallelujah-rejoice.png" data-gall="portfolioGallery" className="venobox" title="Hallelujah choir"><i className="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-              </div>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1594170988/finalists-3_t3u2op.png" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                </div>
             </div>
           </div>
         </div>
 
         <div className="col-lg-4 col-md-6 portfolio-item filter-snrfriend">
           <div className="portfolio-wrap">
-            <img src="assets/img/portfolio/oga-daniel.jpg" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830228/oga-daniel_mops3r.jpg" className="img-fluid" alt=""/>
             <div className="portfolio-info">
               <h4>2016 Tenure!</h4>
               <p>Senior friends</p>
               <div className="portfolio-links">
-                <a href="assets/img/portfolio/oga-daniel.jpg" data-gall="portfolioGallery" className="venobox" title="2016 tenure"><i className="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-              </div>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830228/oga-daniel_mops3r.jpg" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                </div>
             </div>
           </div>
         </div>
 
         <div className="col-lg-4 col-md-6 portfolio-item filter-undergrads">
           <div className="portfolio-wrap">
-            <img src="assets/img/portfolio/cross-worship1.png" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830243/cross-worship1_sqy9pa.png" className="img-fluid" alt=""/>
             <div className="portfolio-info">
               <h4>Worship</h4>
               <p>Undergrads</p>
               <div className="portfolio-links">
-                <a href="assets/img/portfolio/cross-worship1.png" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-              </div>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830243/cross-worship1_sqy9pa.png" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                </div>
             </div>
           </div>
         </div>
       </div>
         <div className="see-more">
-          <button className="btn btn-primary"><Link to="/gallery">See More<i className="icofont-arrow-right"></i></Link></button>
+        <Link to="/gallery" target="_top"><button className="btn btn-primary">View More<i className="icofont-arrow-right"></i></button></Link>
         </div>
     </div>
   </section>

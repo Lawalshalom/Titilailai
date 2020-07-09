@@ -1,6 +1,42 @@
-import React from 'react'
+import React from 'react';
 
-export default function Contact() {
+
+export default class Contact extends React.Component {
+  componentDidMount(){
+      const form = document.querySelector(".php-email-form");
+      form.onsubmit = sendData;
+
+      function sendData(e){
+        e.preventDefault();
+        let confirmation = window.confirm("Are you sure you want to message us?")
+        if (confirmation === true){
+        let formData = new FormData(form);
+
+        let Params = {
+          headers: {
+            "content-type": "application/json"
+          },
+          body: JSON.stringify({
+            name: formData.get("name"),
+            email: formData.get("email"),
+            subject: formData.get("subject"),
+            message: formData.get("message")
+          }),
+          method: "POST"
+        }
+        fetch("http://localhost:8080/formData", Params)
+        .then(res => res.json())
+        .then(data => {
+          console.log(data)
+        })
+        .catch(err => {
+          console.error(err);
+        })
+
+      }
+    }
+  }
+  render(){
     return (
     <>
       <section id="contact" className="contact">
@@ -28,17 +64,17 @@ export default function Contact() {
         <div className="col-lg-3 col-md-6 mt-4 mt-md-0"  data-aos="zoom-in" data-aos-delay="100">
           <div className="info">
             <div>
-              <i className="ri-map-pin-line"></i>
+              <a href= "https://goo.gl/maps/qw7nJnK2gk88Kjp58"><i className="ri-map-pin-line"></i></a>
               <p>Office 2, Chapel Basement,<br/>Chapel Of The Resurrection, University of Ibadan, Ibadan</p>
             </div>
 
             <div>
-              <i className="ri-mail-send-line"></i>
+            <a href ="mailto: scmuisec@gmail.com"><i className="ri-mail-send-line"></i></a>
               <p>scmuisec@gmail.com</p>
             </div>
 
             <div>
-              <i className="ri-phone-line"></i>
+            <a href="tel:+2348139132063"><i className="ri-phone-line"></i></a>
               <p>+234 813 913 2063</p>
             </div>
 
@@ -46,21 +82,24 @@ export default function Contact() {
         </div>
 
         <div className="col-lg-5 col-md-12"  data-aos="fade-up-right" data-aos-delay="100">
-          <form action="forms/contact.php" method="post" className="php-email-form">
+          <form action="/form-message" method="post" className="php-email-form">
             <div className="form-group">
-              <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <input type="text" name="name" className="form-control"
+              id="name" placeholder="FirstName LastName" required minLength="3"
+              maxLength="30" pattern="[a-zA-Z]{3,}\s[a-zA-Z]{3,}"/>
               <div className="validate"></div>
             </div>
             <div className="form-group">
-              <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <input type="email" className="form-control" name="email" id="email" placeholder="Your Email"
+              required  />
               <div className="validate"></div>
             </div>
             <div className="form-group">
-              <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required minLength="8" maxLength="50"/>
               <div className="validate"></div>
             </div>
             <div className="form-group">
-              <textarea className="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <textarea className="form-control" name="message" required minLength="20" placeholder="Message"></textarea>
               <div className="validate"></div>
             </div>
             <div className="mb-3">
@@ -76,4 +115,5 @@ export default function Contact() {
   </section>
 </>
     )
+}
 }

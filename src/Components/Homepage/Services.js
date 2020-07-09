@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
-export default function Services() {
+export default class Services extends React.Component {
+  render(){
     return (
         <div>
             <section id="services" className="services">
@@ -39,8 +41,12 @@ export default function Services() {
           </div>
         </div>
       </div>
+      <div className="see-more" data-aos="fade" data-aos-delay="300">
+        <Link to="/events" target="_top"><button className="btn btn-primary">See More<i className="icofont-arrow-right"></i></button></Link>
+        </div>
     </div>
   </section>
         </div>
     )
+}
 }

@@ -12,8 +12,8 @@ export default function Counts() {
 							data-aos="fade-right"
 							data-aos-delay="150">
 							<img
-								src="assets/img/happy-church.png"
-								alt=""
+								src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830264/happy-church_zyf0h3.png"
+								alt="the happy church"
 								className="img-fluid"
 							/>
 						</div>
