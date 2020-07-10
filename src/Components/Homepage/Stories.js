@@ -37,9 +37,8 @@ export default class Stories extends React.Component {
   render() {
     return (
         <div>
-            <section id="testimonials" className="testimonials section-bg">
+            <section id="testimonials" className="testimonials">
     <div className="container">
-
       <div className="section-title" data-aos="fade-up">
         <h2>SCM STORIES</h2>
         <p>Testimonies from our senior friends!</p>

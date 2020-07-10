@@ -3,8 +3,7 @@ body {
 	box-sizing: border-box;
 	color: var(--black-color);
 	transition: all 3s ease;
-	background: var(--watermark-bg);
-	background-attachment: fixed;
+	background-color: var(--white-color);
 	--white-color: #fff;
 	--black-color: #555555;
 	--blue-color: #3498db;
@@ -430,7 +429,7 @@ h6 {
 	background-color: var(--white-color);
 	background: linear-gradient
 		(to right, rgba(56, 56, 56, 0.9), rgba(85, 83, 83, 0.795));
-	background-attachment: fixed;
+
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -538,12 +537,6 @@ h6 {
 	animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-@media (min-width: 1024px) {
-	#hero {
-		background-attachment: fixed;
-	}
-}
-
 @media (max-width: 768px) {
 	#hero {
 		margin-top: 20px;
@@ -572,6 +565,11 @@ h6 {
 		width: 80%;
 	}
 }
+@media (max-width: 575px) {
+	#hero .hero-img {
+		height: 50vh;
+	}
+}
 
 @-webkit-keyframes up-down {
 	0% {
@@ -597,13 +595,21 @@ h6 {
 section {
 	padding: 60px 0;
 	overflow: hidden;
-	background: var(--watermark-bg);
-	background-attachment: fixed;
-	background-color: var(--white-color);
 }
 
 .section-bg {
-	background-color: var(--white-color);
+	background: var(--watermark-bg);
+	position: fixed;
+	height: 60vh;
+	width: 60vw;
+	margin: 20vh 20vw;
+	z-index: -1;
+}
+@media (max-width: 730px) {
+	.section-bg {
+		width: 100%;
+		left: -11vh;
+	}
 }
 
 .section-title {
@@ -652,11 +658,7 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-#clients {
-	background: var(--watermark-bg);
-	background-attachment: fixed;
-	background-color: var(--white-color);
-}
+
 .clients {
 	padding: 10px 0;
 	text-align: center;
@@ -698,11 +700,6 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-#about {
-	background: var(--watermark-bg);
-	background-attachment: fixed;
-	background-color: var(--white-color);
-}
 .about .content h3 {
 	font-weight: 600;
 	font-size: 26px;
@@ -762,11 +759,6 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-#counts {
-	background: var(--watermark-bg);
-	background-attachment: fixed;
-	background-color: var(--white-color);
-}
 .counts {
 	padding-top: 0;
 }
@@ -860,11 +852,6 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-#services {
-	background: var(--watermark-bg);
-	background-attachment: fixed;
-	background-color: var(--white-color);
-}
 .services .icon-box {
 	padding: 30px;
 	position: relative;
@@ -956,9 +943,6 @@ section {
 /*--------------------------------------------------------------
 # Blog Posts
 --------------------------------------------------------------*/
-#blog-posts {
-	background-color: var(--white-color);
-}
 .blog-posts {
 	padding-top: 20px;
 }
@@ -1146,9 +1130,6 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-#portfolio {
-	background-color: var(--white-color);
-}
 .portfolio .portfolio-item {
 	margin-bottom: 30px;
 }
@@ -1377,11 +1358,6 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-#contact {
-	background: var(--watermark-bg);
-	background-attachment: fixed;
-	background-color: var(--white-color);
-}
 .contact .contact-about h3 {
 	font-size: 28px;
 	margin: 0 0 10px 0;
@@ -1567,69 +1543,6 @@ section {
 	}
 	.breadcrumbs ol li {
 		display: inline-block;
-	}
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-	padding-top: 20px;
-}
-
-.portfolio-details .portfolio-title {
-	font-size: 26px;
-	font-weight: 700;
-	margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-details-carousel .owl-nav,
-.portfolio-details .portfolio-details-carousel .owl-dots {
-	margin-top: 5px;
-	text-align: center;
-}
-
-.portfolio-details .portfolio-details-carousel .owl-dot {
-	display: inline-block;
-	margin: 0 5px;
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-	background-color: #ddd !important;
-}
-
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
-	background-color: var(--blue-color) !important;
-}
-
-.portfolio-details .portfolio-info {
-	padding-top: 45px;
-}
-
-.portfolio-details .portfolio-info h3 {
-	font-size: 22px;
-	font-weight: 400;
-	margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-info ul {
-	list-style: none;
-	padding: 0;
-	font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-	margin-top: 10px;
-}
-
-.portfolio-details .portfolio-info p {
-	font-size: 15px;
-	padding: 15px 0 0 0;
-}
-
-@media (max-width: 992px) {
-	.portfolio-details .portfolio-info {
-		padding-top: 20px;
 	}
 }
 

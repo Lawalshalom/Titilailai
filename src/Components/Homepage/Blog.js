@@ -30,7 +30,7 @@ export default class Blog extends React.Component {
               <h5 className="card-title"><a href="https://scmuiblogcom.wordpress.com/2017/06/18/for-better-for-worse-episode-1/"
               rel="noopener noreferrer" target="_blank">For Better For Worse(1)</a></h5>
               <p className="card-text">Dupe felt a hand on her shoulder,gently shaking her.
-‘Wake up, honey. Please.Modupe’’. <br/> From her sleep she could recognise the voice. It was Tomi. Her husband of twelve years. She stirred a bit and the shaking got a bit stronger...</p>
+                ‘Wake up, honey. Please.Modupe’’. <br/> From her sleep she could recognise the voice. It was Tomi. Her husband of twelve years. She stirred a bit and the shaking got a bit stronger...</p>
               <div className="read-more"><a href="https://scmuiblogcom.wordpress.com/2017/06/18/for-better-for-worse-episode-1/"
               rel="noopener noreferrer" target="_blank"><i className="icofont-arrow-right"></i> Read More</a></div>
             </div>

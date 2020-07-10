@@ -1,7 +1,9 @@
 import React from "react";
+import "jquery";
 
-export default function Counts() {
+export default class Counts extends React.Component {
 
+	render(){
 	return (
 		<>
 			<section id="counts" className="counts">
@@ -84,4 +86,5 @@ export default function Counts() {
 			</section>
 		</>
 	);
+}
 }

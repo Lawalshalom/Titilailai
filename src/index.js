@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter>
+  <div className="section-bg"></div>
     <App />
   </BrowserRouter>,
   document.getElementById('root')
