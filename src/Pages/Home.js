@@ -19,7 +19,7 @@ import Footer from "../Components/Homepage/Footer";
   <Fragment>
       <Header />
       <section id="hero" className="d-flex align-items-center">
-        <div className="container" data-aos="zoom-out-down" data-aos-delay="100">
+        <div className="container container-md" data-aos="zoom-out-down" data-aos-delay="100">
           <div className="animated order-2 order-lg-1 d-flex flex-column justify-content-center hero-img"
             style={{backgroundImage: 'url("https://res.cloudinary.com/lawfirm1000/image/upload/v1593830205/chris-edited_t6x81f.png")'}}>
             <h1 data-aos="fade-up"><span>SCM UI</span><br/>the abode of His presence!</h1>

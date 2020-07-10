@@ -5,7 +5,7 @@ export default class Excos extends React.Component {
   render(){
     return (
         <>
-         <section id="team" className="team section-bg">
+         <section id="team" className="team">
     <div className="container">
 
       <div className="section-title excos-title" data-aos="fade-down">

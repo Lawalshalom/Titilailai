@@ -28,7 +28,7 @@ export default class Header extends React.Component {
                 <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830204/scm-header_dxauov.png" alt="header" className="img-fluid"/>
                 <span>  SCM UI</span></Link></h1>
             </div>
-            <nav className="nav-menu d-none d-lg-block">
+            <nav className="nav-menu d-none d-md-block d-lg-block">
             <ul>
             <li ><Link to="/" target="_top">Home</Link></li>
                 <li className="drop-down"><Link to="/about" target="_top">Explore!</Link>

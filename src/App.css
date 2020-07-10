@@ -271,6 +271,47 @@ h6 {
 		content: "\ea9d";
 	}
 }
+@media (min-width: 768px) and (max-width: 1100px) {
+	.nav-menu > ul > li,
+	.nav-menu .custom-switch {
+		position: relative;
+		white-space: nowrap;
+		left: -10px;
+	}
+	#header {
+		height: 60px;
+	}
+	#header .logo h1 img {
+		display: flex;
+	}
+	.nav-menu a {
+		display: block;
+		position: relative;
+		color: var(--black-color);
+		padding: 8px 0 12px 7px;
+		transition: 0.3s;
+		font-size: 12px;
+		font-family: "Open Sans", sans-serif;
+	}
+	.nav-menu .custom-switch {
+		display: block;
+		position: relative;
+		padding: 6.8px 0 12px 15px;
+		font-size: 12px;
+	}
+	.nav-menu .custom-control-label::before,
+	.nav-menu .custom-control-label::after {
+		display: none;
+	}
+
+	.nav-menu .get-started a {
+		background: var(--blue-color);
+		color: var(--white-color);
+		border-radius: 50px;
+		margin: 0 0 0 10px;
+		padding: 7px 15px;
+	}
+}
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
@@ -427,9 +468,6 @@ h6 {
 	height: 100vh;
 	width: 100%;
 	background-color: var(--white-color);
-	background: linear-gradient
-		(to right, rgba(56, 56, 56, 0.9), rgba(85, 83, 83, 0.795));
-
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -557,6 +595,14 @@ h6 {
 	}
 	#hero .hero-img {
 		width: 70%;
+	}
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+	#hero {
+		height: 50vh;
+	}
+	#hero .hero-img {
+		height: 40vh;
 	}
 }
 
