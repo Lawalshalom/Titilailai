@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Team() {
     return (
         <div>
-        <section id="team" className="team section-bg">
+        <section id="team" className="team">
     <div className="container">
       <div className="section-title excos-title">
         <h2>Executive Council 2020</h2>
