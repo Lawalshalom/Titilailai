@@ -1,42 +1,63 @@
 import React from 'react';
-
+import emailjs from 'emailjs-com';
 
 export default class Contact extends React.Component {
-  componentDidMount(){
-      const form = document.querySelector(".php-email-form");
-      form.onsubmit = sendData;
 
-      function sendData(e){
-        e.preventDefault();
-        let confirmation = window.confirm("Are you sure you want to message us?")
-        if (confirmation === true){
-        let formData = new FormData(form);
-
-        let Params = {
-          headers: {
-            "content-type": "application/json"
-          },
-          body: JSON.stringify({
-            name: formData.get("name"),
-            email: formData.get("email"),
-            subject: formData.get("subject"),
-            message: formData.get("message")
-          }),
-          method: "POST"
-        }
-        fetch("http://localhost:8080/formData", Params)
-        .then(res => res.json())
-        .then(data => {
-          console.log(data)
-        })
-        .catch(err => {
-          console.error(err);
-        })
-
-      }
+  constructor(){
+    super();
+    this.state = {
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
     }
   }
+  componentDidMount(){
+const errorDiv = document.querySelector(".error-message");
+const loadingDiv = document.querySelector(".loading");
+const sentDiv = document.querySelector(".sent-message");
+
+      this.sendData = e =>{
+        e.preventDefault();
+        loadingDiv.style.display = "block";
+        const service_id = "default_service";
+        const template_id = "template_CySYzf3e";
+        const user_id = "user_MKOtFQkpTCql1DaoDPido";
+        emailjs.send(service_id, template_id, this.state, user_id)
+        .then((res) => {
+          loadingDiv.style.display = "none";
+          sentDiv.style.display = "block";
+          console.log("message sent:", res.status, res.text)
+        },
+        (err) => {
+          loadingDiv.style.display = "none";
+          sentDiv.style.display = "none";
+          errorDiv.style.display = "block";
+          console.log(err);
+        });
+      }
+    }
   render(){
+    this.nameData = e => {
+      this.setState({
+        name: e.target.value
+      })
+    }
+    this.emailData = e => {
+      this.setState({
+        email: e.target.value
+      })
+    }
+    this.subjectData = e => {
+      this.setState({
+        subject: e.target.value
+      })
+    }
+    this.messageData = e => {
+      this.setState({
+        message: e.target.value
+      })
+    }
     return (
     <>
       <section id="contact" className="contact">
@@ -82,25 +103,23 @@ export default class Contact extends React.Component {
         </div>
 
         <div className="col-lg-5 col-md-12"  data-aos="fade-up-right" data-aos-delay="100">
-          <form action="/form-message" method="post" className="php-email-form">
+          <form className="php-email-form" onSubmit={this.sendData}>
             <div className="form-group">
               <input type="text" name="name" className="form-control"
               id="name" placeholder="FirstName LastName" required minLength="3"
-              maxLength="30" pattern="[a-zA-Z]{3,}\s[a-zA-Z]{3,}"/>
-              <div className="validate"></div>
+              maxLength="30" pattern="[a-zA-Z]{3,}\s[a-zA-Z]{3,}" value={this.state.name} onChange={this.nameData}/>
             </div>
             <div className="form-group">
               <input type="email" className="form-control" name="email" id="email" placeholder="Your Email"
-              required  />
-              <div className="validate"></div>
+              required onChange={this.emailData} value={this.state.email}/>
             </div>
             <div className="form-group">
-              <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required minLength="8" maxLength="50"/>
-              <div className="validate"></div>
+              <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject"
+              required minLength="8" maxLength="50" value={this.state.subject} onChange={this.subjectData}/>
             </div>
             <div className="form-group">
-              <textarea className="form-control" name="message" required minLength="20" placeholder="Message"></textarea>
-              <div className="validate"></div>
+              <textarea className="form-control" name="message" required minLength="20" placeholder="Message"
+              onChange={this.messageData} value={this.state.message}></textarea>
             </div>
             <div className="mb-3">
               <div className="loading">Loading</div>
