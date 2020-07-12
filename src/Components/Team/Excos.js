@@ -13,7 +13,11 @@ export default class Excos extends React.Component {
         <h2>Executive Council 2020</h2>
         <p>Meet the current leadership of the house for the 2019/2020 academic session</p>
       </div>
-
+        <div data-aos="fade-up">
+          <h5>
+            <strong>Tenure theme: </strong> Doing the Works of Christ; Proclaiming and Demonstrating the Kingdom
+          </h5>
+        </div>
         <h1 data-aos="fade-right" data-aos-delay="100">Admin Officers</h1>
       <div className="row">
         <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
