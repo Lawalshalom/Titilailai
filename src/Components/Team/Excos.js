@@ -41,7 +41,7 @@ export default class Excos extends React.Component {
         <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div className="member" data-aos="fade-up-right" data-aos-delay="100">
             <div className="member-img">
-              <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830190/debra-adesina-1_mnrwxl.png" className="img-fluid" alt=""/>
+              <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594899346/debra-new_nyijpf.png" className="img-fluid" alt=""/>
               <div className="social">
                 <a href="https://twitter.com/Debraadesina?s=08"><i className="icofont-twitter"></i></a>
                 <a><i className="icofont-facebook"></i></a>
