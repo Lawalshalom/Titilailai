@@ -16,6 +16,7 @@ export default class Contact extends React.Component {
 const errorDiv = document.querySelector(".error-message");
 const loadingDiv = document.querySelector(".loading");
 const sentDiv = document.querySelector(".sent-message");
+const formDiv = document.querySelectorAll(".form-group");
 
       this.sendData = e =>{
         e.preventDefault();
@@ -27,6 +28,8 @@ const sentDiv = document.querySelector(".sent-message");
         .then((res) => {
           loadingDiv.style.display = "none";
           sentDiv.style.display = "block";
+          errorDiv.style.display = "none";
+          formDiv.forEach(div => div.style.display = "none");
           console.log("message sent:", res.status, res.text)
         },
         (err) => {
@@ -126,7 +129,7 @@ const sentDiv = document.querySelector(".sent-message");
               <div className="error-message"></div>
               <div className="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div className="text-center"><button type="submit">Send Message</button></div>
+            <div className="text-center form-group"><button type="submit">Send Message</button></div>
           </form>
         </div>
       </div>
