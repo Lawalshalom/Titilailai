@@ -159,10 +159,10 @@ export default class Mission extends React.Component {
                 <p>In the 77 years of her existence in Nigeria, the Movement has been a resource base for church and the society in the training of students in Schools, building up godly model men and women, spearheading coordination of joint campus fellowships, mission work, leadership training Programs, fight against all unrighteous vices in the society etc. We are the handmaid of the church.</p>
                 <p>The SCM Nigeria was founded in <strong>1940 by Dr. Francis Akanu Ibiam and Chief Theophilus O. Ejiwumi.</strong> The SCM is a local expression of the World Student Christian Federation (W.S.C.F) based in Geneva, Switzerland- a student/youth based ecumenical interdenominational, <strong>non-racial,</strong> Missionary organization, with a desk at UNESCO. Beside the SCM, there are other national movements affiliated to WSCF in over a Hundred and six countries. The Student Christian Movement is a Faith-Based Organization (FBO). Our mandate is to the students and youth.</p>
                 <p>In our society. We carry out spiritual, moral ethics and social skills development with academic tutoring that promotes the spiritual, physical, educational and life skills necessary to prepare and empower youth for leadership in their communities, church and society.</p>
-                <p>SCM Nigeria very actively act as the handmaid of the Nigerian Church. We are associate members of the Christian Council of Nigeria-one of the foremost blocs of the Christian Association of Nigeria.</p>
+                <p>SCM Nigeria very actively acts as the handmaid of the Nigerian Church. We are associate members of the Christian Council of Nigeria-one of the foremost blocs of the Christian Association of Nigeria.</p>
                 <p>The name STUDENT CHRISTIAN MOVEMENT defines the life and purpose of the Movement in these ways as explained below:</p>
                 <ul>
-                    <li data-aos="fade-up-right" data-aos-delay="300"><strong>STUDENT:</strong> SCM draws her members from students in institutions of learning and in most national context also means students of the Bible (Youths and Adults).</li>
+                    <li data-aos="fade-up-right" data-aos-delay="300"><strong>STUDENT:</strong> SCM draws her members from students in institutions of learning and in most national contexts also mean students of the Bible (Youths and Adults).</li>
                     <li data-aos="fade-up-left" data-aos-delay="300"><strong>CHRISTIAN:</strong> Members of the SCM are bible believing disciples of Christ who, by their lives and conducts, are called Christians.</li>
                     <li data-aos="fade-up-right" data-aos-delay="300"><strong>MOVEMENT:</strong> The SCM emphasis is sound and holistic growth of all her members – spirit, soul and body. As an organization, we are dynamic and progressive in our effort to fulfil our God-given vision. SCM informs her students on the realities of political situations both local and global, seeks new possibilities in the area of education, constantly striving for the renewal of the church, the eradication of social vices/crime in our campuses and society at large, moving with the hope and vision for a world of peace and justice as was in the life of Jesus Christ.</li>
                 </ul>
@@ -186,10 +186,10 @@ export default class Mission extends React.Component {
                   <br/>The abode of His presence
                   <br/>SCM, that's where we are
                   <br/>We are the apple of His eyes
-                  <br/>And we are vdestined to shine
+                  <br/>And we are destined to shine
                   <br/>We are <strong>S - Saints</strong>
                   <br/><strong>C - Called to be</strong>
-                  <br/><strong>M - Millitants</strong>
+                  <br/><strong>M - Militants</strong>
                   <br/><strong>SCM!</strong>
                 </p>
               </div>

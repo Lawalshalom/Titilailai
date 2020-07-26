@@ -22,7 +22,7 @@ export default class About extends React.Component {
           <ul>
             <li><i className="ri-check-double-line"></i><strong> S: </strong> Saints</li>
             <li><i className="ri-check-double-line"></i><strong> C: </strong> Called to be</li>
-            <li><i className="ri-check-double-line"></i><strong> M: </strong> Millitant!</li>
+            <li><i className="ri-check-double-line"></i><strong> M: </strong> Militants!</li>
           </ul>
         </div>
         <div className="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">

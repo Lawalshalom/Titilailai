@@ -39,6 +39,7 @@ export default function Details() {
             <p>You can make your donations to the account below:</p>
             <br/>
             <p><strong>Polaris Bank</strong> <em>(formerly Skye Bank)</em> – <strong>4090746902</strong></p>
+            <p><strong>Account Name:</strong> Student Christian Movement</p>
             </div>
             </div>
         </div>
