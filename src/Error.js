@@ -1,9 +1,23 @@
-import React from 'react'
+import React from 'react';
+import Header from "./Components/Homepage/Header";
+import Contact from "./Components/Homepage/Contact";
+import Footer from "./Components/Homepage/Footer";
 
-export default function Error() {
+export default class Error extends React.Component {
+    constructor(props){
+      super(props);
+    }
+   render() {
     return (
-        <div>
-            <h1><strong>This page cannot be found. Try again, believer.</strong></h1>
+    <section id="error">
+        <Header toggleClass={this.props.toggleClass}/>
+        <div className="container">
+            <h3 className="text-center"><strong>This page cannot be found. Try again, believer.</strong></h3>
+            <p className="text-center">Not finding what you are looking for? Contact us!</p>
         </div>
+        <Contact />
+        <Footer />
+    </section>
     )
+}
 }

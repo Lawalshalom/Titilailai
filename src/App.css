@@ -1677,6 +1677,10 @@ section {
 		left: auto;
 	}
 }
+#error h3 {
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+}
 
 @-webkit-keyframes bounceInRight {
 	0% {

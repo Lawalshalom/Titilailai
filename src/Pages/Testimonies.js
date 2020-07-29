@@ -4,13 +4,16 @@ import Testimonyitems from "../Components/Testimony/Testimonyitems";
 import Footer from "../Components/Homepage/Footer";
 
 export default class Testimonies extends Component {
+    constructor(props){
+        super(props);
+    }
     render() {
         return (
-            <div>
-    <Header />
+            <>
+    <Header toggleClass={this.props.toggleClass}/>
     <Testimonyitems />
     <Footer />
-            </div>
+            </>
         )
     }
 }

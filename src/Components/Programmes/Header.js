@@ -4,19 +4,7 @@ import { Link } from "react-router-dom";
 export default class Header extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            active: false,
-        };
-        this.toggleClass= this.toggleClass.bind(this);
-    }
-      toggleClass() {
-          const control = document.querySelector(".custom-control-input");
-          const element = document.body;
-          control.checked ? element.classList.add("darkTheme") : element.classList.remove("darkTheme");
-          this.setState((prevState) => ({
-              active: !prevState.active
-            }));
-        }
+      }
     render(){
     return (
     <>
@@ -57,7 +45,7 @@ export default class Header extends React.Component {
 			              <input type="checkbox"
 			              className="custom-control-input"
 			              id="customSwitches"
-			              onClick={this.toggleClass}/>
+			              onClick={this.props.toggleClass}/>
                     <label className="custom-control-label" for="customSwitches">Day/Night</label>
 		              </div>
                 </li>

@@ -7,7 +7,9 @@
 }
 #belief .img img {
 	position: relative;
-	width: 80%;
+	width: 100%;
+	margin-left: -20vw;
+	margin-top: 90vh;
 	height: 60vh;
 }
 
@@ -24,6 +26,7 @@
 	#belief .img img {
 		position: relative;
 		width: 100%;
+		margin-top: 0;
 		height: 40vh;
 	}
 

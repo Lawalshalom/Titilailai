@@ -14,10 +14,13 @@ import Contact from "../Components/Homepage/Contact";
 import Footer from "../Components/Homepage/Footer";
 
  class Home extends React.Component {
+   constructor(props){
+     super(props);
+   }
   render() {
     return (
   <Fragment>
-      <Header />
+      <Header toggleClass={this.props.toggleClass}/>
       <section id="hero" className="d-flex align-items-center">
         <div className="container container-md" data-aos="zoom-out-down" data-aos-delay="100">
           <div className="animated order-2 order-lg-1 d-flex flex-column justify-content-center hero-img"

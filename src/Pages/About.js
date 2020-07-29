@@ -6,10 +6,13 @@ import Footer from "../Components/Homepage/Footer";
 import "../App.css";
 
 export default class About extends React.Component {
+    constructor(props){
+        super(props);
+      }
     render(){
     return (
         <>
-        <Header />
+        <Header toggleClass={this.props.toggleClass}/>
         <Mission />
         <Contact />
         <Footer />

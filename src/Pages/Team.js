@@ -3,12 +3,18 @@ import Header from "../Components/Team/Header";
 import Excos from "../Components/Team/Excos";
 import Footer from "../Components/Homepage/Footer";
 
-export default function Team() {
-    return (
-        <div>
-        <Header />
+export default
+class Home extends React.Component {
+  constructor(props){
+    super(props);
+  }
+ render() {
+   return (
+        <>
+        <Header  toggleClass={this.props.toggleClass}/>
         <Excos />
         <Footer />
-        </div>
+        </>
     )
+}
 }
