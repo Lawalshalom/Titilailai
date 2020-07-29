@@ -14,9 +14,6 @@ import Contact from "../Components/Homepage/Contact";
 import Footer from "../Components/Homepage/Footer";
 
  class Home extends React.Component {
-   constructor(props){
-     super(props);
-   }
   render() {
     return (
   <Fragment>

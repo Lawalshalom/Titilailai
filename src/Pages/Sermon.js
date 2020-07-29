@@ -4,9 +4,6 @@ import Messages from "../Components/Sermon/Messages";
 import Footer from "../Components/Homepage/Footer";
 
 export default class Sermon extends Component {
-    constructor(props){
-        super(props);
-      }
     render() {
         return (
             <>

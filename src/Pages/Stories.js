@@ -4,9 +4,6 @@ import Posts from "../Components/Stories/Posts";
 import Footer from "../Components/Homepage/Footer";
 
 export default class Stories extends Component {
-    constructor(props){
-        super(props);
-      }
     render() {
         return (
             <>

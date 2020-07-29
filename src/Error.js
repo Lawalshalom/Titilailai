@@ -4,9 +4,6 @@ import Contact from "./Components/Homepage/Contact";
 import Footer from "./Components/Homepage/Footer";
 
 export default class Error extends React.Component {
-    constructor(props){
-      super(props);
-    }
    render() {
     return (
     <section id="error">

@@ -13,9 +13,6 @@ import Events from "./Pages/Events";
 import Sermon from "./Pages/Sermon";
 import Error from "./Error";
 export default class App extends React.Component {
-    constructor(props) {
-        super(props);
-    }
       toggleClass = () => {
         const control = document.querySelector(".custom-control-input");
         control.checked ? window.localStorage.setItem("theme", "dark") : window.localStorage.removeItem("theme");
