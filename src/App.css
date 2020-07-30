@@ -642,6 +642,9 @@ section {
 	padding: 60px 0;
 	overflow: hidden;
 }
+.darkTheme .section-bg {
+	opacity: 0.2;
+}
 
 .section-bg {
 	background: var(--watermark-bg);
@@ -649,6 +652,7 @@ section {
 	height: 60vh;
 	width: 60vw;
 	margin: 20vh 20vw;
+	opacity: 1;
 	z-index: -1;
 }
 @media (max-width: 730px) {
@@ -1418,7 +1422,7 @@ section {
 	font-size: 14px;
 	line-height: 24px;
 	font-family: "Raleway", sans-serif;
-	color: #888;
+	color: var(--black-color);
 }
 
 .contact .social-links {
