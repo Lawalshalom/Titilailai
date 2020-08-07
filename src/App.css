@@ -471,6 +471,8 @@ h6 {
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
+	border-radius: 10px;
+	box-shadow: 0px 2px 15px var(--black-transparent-bg);
 }
 
 #hero h1 {
@@ -593,8 +595,9 @@ h6 {
 		line-height: 24px;
 		margin-bottom: 30px;
 	}
-	#hero .hero-img {
-		width: 70%;
+	#hero .container {
+		margin: 0;
+		padding: 0;
 	}
 }
 @media (min-width: 768px) and (max-width: 1100px) {
@@ -605,18 +608,6 @@ h6 {
 		height: 40vh;
 	}
 }
-
-@media (max-width: 575px) {
-	#hero .hero-img {
-		width: 80%;
-	}
-}
-@media (max-width: 575px) {
-	#hero .hero-img {
-		height: 50vh;
-	}
-}
-
 @-webkit-keyframes up-down {
 	0% {
 		transform: translateY(15px);
@@ -661,7 +652,6 @@ section {
 		left: -11vh;
 	}
 }
-
 .section-title {
 	text-align: center;
 	padding-bottom: 30px;
