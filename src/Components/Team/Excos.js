@@ -23,7 +23,7 @@ export default class Excos extends React.Component {
         <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div className="member" data-aos="fade-up" data-aos-delay="100">
             <div className="member-img">
-              <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830204/femi-lawal-1_q0bse0.png" className="img-fluid" alt=""/>
+              <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1596798705/SCM%20UI%20Project/lawfirm_qnyf7h.png" className="img-fluid" alt=""/>
               <div className="social">
                 <a href="https://twitter.com/lawalshalom"><i className="icofont-twitter"></i></a>
                 <a href="https://facebook.com/lawalshalom"><i className="icofont-facebook"></i></a>
@@ -463,7 +463,7 @@ export default class Excos extends React.Component {
         <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div className="member" data-aos="fade-up-left" data-aos-delay="300">
             <div className="member-img">
-              <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594027390/dona-new-1_is6uer.png" className="img-fluid" alt=""/>
+              <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1596795708/SCM%20UI%20Project/don-david_rw1bfc.png" className="img-fluid" alt=""/>
               <div className="social">
                 <a href="http://twitter.com/swazzybadoskii"><i className="icofont-twitter"></i></a>
                 <a href="https://www.facebook.com/dona.davidgbenu"><i className="icofont-facebook"></i></a>

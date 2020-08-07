@@ -41,12 +41,12 @@ export default class Gallery extends React.Component {
 
         <div className="col-lg-4 col-md-6 portfolio-item filter-events">
           <div className="portfolio-wrap">
-            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830223/isaac-choir_qe8oto.png" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1596799297/SCM%20UI%20Project/isaac-choir_tnicek.png" className="img-fluid" alt=""/>
             <div className="portfolio-info">
               <h4>Havilla 2018</h4>
               <p>Events</p>
               <div className="portfolio-links">
-                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830223/isaac-choir_qe8oto.png" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1596799297/SCM%20UI%20Project/isaac-choir_tnicek.png" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
                 </div>
             </div>
           </div>
@@ -80,12 +80,12 @@ export default class Gallery extends React.Component {
 
         <div className="col-lg-4 col-md-6 portfolio-item filter-snrfriend">
           <div className="portfolio-wrap">
-            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830232/immanuel_thfkzw.png" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1596799296/SCM%20UI%20Project/immanuel_qhlok8.png" className="img-fluid" alt=""/>
             <div className="portfolio-info">
               <h4>Immanuel Akerele</h4>
               <p>Senior friend</p>
               <div className="portfolio-links">
-                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830232/immanuel_thfkzw.png" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1596799296/SCM%20UI%20Project/immanuel_qhlok8.png" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
                 </div>
             </div>
           </div>
@@ -119,12 +119,12 @@ export default class Gallery extends React.Component {
 
         <div className="col-lg-4 col-md-6 portfolio-item filter-snrfriend">
           <div className="portfolio-wrap">
-            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830228/oga-daniel_mops3r.jpg" className="img-fluid" alt=""/>
+            <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1596799298/SCM%20UI%20Project/oga-daniel_ytkjfw.jpg" className="img-fluid" alt=""/>
             <div className="portfolio-info">
               <h4>2016 Tenure!</h4>
               <p>Senior friends</p>
               <div className="portfolio-links">
-                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1593830228/oga-daniel_mops3r.jpg" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
+                <a href="https://res.cloudinary.com/lawfirm1000/image/upload/v1596799298/SCM%20UI%20Project/oga-daniel_ytkjfw.jpg" data-gall="portfolioGallery" className="venobox" title="open image"><i className="bx bx-plus"></i></a>
                 </div>
             </div>
           </div>
