@@ -77,11 +77,17 @@ const formDiv = document.querySelectorAll(".form-group");
             <h3>SCM UI</h3>
             <p>Connect with us on all our social media pages!</p>
             <div className="social-links">
-              <a href="https://twitter.com/scmui" className="twitter"><i className="icofont-twitter"></i></a>
-              <a href="https://facebook.com/scmui" className="facebook"><i className="icofont-facebook"></i></a>
-              <a href="https://instagram.com/scmunibadan" className="instagram"><i className="icofont-instagram"></i></a>
-              <a href="https://wa.me/2348131644353" className="whatsapp"><i className="icofont-whatsapp"></i></a>
+              <a href="https://twitter.com/scmui" target="_blank" rel="noopener noreferrer" className="twitter"><i className="icofont-twitter"></i></a>
+              <a href="https://facebook.com/scmui" target="_blank" rel="noopener noreferrer" className="facebook"><i className="icofont-facebook"></i></a>
+              <a href="https://instagram.com/scmunibadan" target="_blank" rel="noopener noreferrer" className="instagram"><i className="icofont-instagram"></i></a>
+              <a href="https://wa.me/2348131644353" target="_blank" rel="noopener noreferrer" className="whatsapp"><i className="icofont-whatsapp"></i></a>
             </div>
+            <p>Connect with our senior friends network online!</p>
+            <div className="social-links">
+              <a href="https://twitter.com/scmuialumni?s=08" target="_blank" rel="noopener noreferrer" className="twitter"><i className="icofont-twitter"></i></a>
+              <a href="https://www.facebook.com/groups/236428246372678/" target="_blank" rel="noopener noreferrer" className="facebook"><i className="icofont-facebook"></i></a>
+            </div>
+
           </div>
         </div>
 
