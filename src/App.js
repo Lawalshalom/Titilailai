@@ -10,9 +10,23 @@ import Stories from "./Pages/Stories";
 import Testimonies from "./Pages/Testimonies";
 import Confession from "./Pages/Confession";
 import Events from "./Pages/Events";
+import Login from "./Pages/Login";
+import UgCalendar from "./Pages/UgCalendar";
+import PgCalendar from "./Pages/PgCalendar";
 import Sermon from "./Pages/Sermon";
 import Error from "./Error";
 export default class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      birthdayData: null
+    }
+  }
+  setBirthdayData = (data) => {
+    this.setState({
+      birthdayData: data
+    });
+  };
       toggleClass = () => {
         const control = document.querySelector(".custom-control-input");
         control.checked ? window.localStorage.setItem("theme", "dark") : window.localStorage.removeItem("theme");
@@ -62,6 +76,12 @@ export default class App extends React.Component {
                 <Events toggleClass={this.toggleClass} {...renderprops} />} />
               <Route path="/sermon" render={renderprops =>
                 <Sermon toggleClass={this.toggleClass} {...renderprops} />} />
+              <Route path="/login" render={renderprops =>
+                <Login toggleClass={this.toggleClass} setBirthdayData={this.setBirthdayData} {...renderprops} />} />
+              <Route path="/ugCalendar" render={renderprops =>
+                <UgCalendar toggleClass={this.toggleClass} birthdayData={this.state.birthdayData} {...renderprops} />} />
+              <Route path="/pgCalendar" render={renderprops =>
+                <PgCalendar toggleClass={this.toggleClass} birthdayData={this.state.birthdayData} {...renderprops} />} />
               <Route render={renderprops =>
                 <Error toggleClass={this.toggleClass} {...renderprops} />} />
           </Switch>
