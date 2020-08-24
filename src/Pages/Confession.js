@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Components/Confessions/Header";
 import Confess from "../Components/Confessions/Confess";
+import Popup from "../Components/Give/Popup";
 import Footer from "../Components/Homepage/Footer";
 
 export default class Confession extends Component {
@@ -8,6 +9,7 @@ export default class Confession extends Component {
         return (
             <>
               <Header toggleClass={this.props.toggleClass}/>
+              <Popup />
               <Confess />
               <Footer />
             </>

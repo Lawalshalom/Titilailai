@@ -205,7 +205,7 @@ const BirthdayCalendar = (props) => {
                    //Create the Details Container
                    details = createElement("div", "details in");
                    //Create the arrow
-                   var arrow = createElement("div", "arrow");
+                    arrow = createElement("div", "arrow");
                    //Create the event wrapper
                    details.appendChild(arrow);
                    el.parentNode.appendChild(details);
@@ -295,7 +295,7 @@ const BirthdayCalendar = (props) => {
             birthday: birthday.birthday,
             color: colors[Math.floor(Math.random() * 4)]
         };
-    dataObjects.push(dataObject);
+     return dataObjects.push(dataObject);
     });
     const data = dataObjects;
 
@@ -349,7 +349,7 @@ const BirthdayCalendar = (props) => {
 
     async function addBirthday() {
         const res = await fetch(
-            "http://localhost:3001/add/pg/birthday",
+            "https://calendar-app-femi.herokuapp.com/add/pg/birthday",
             Params
         );
         const data = await res.json();
@@ -415,7 +415,7 @@ const BirthdayCalendar = (props) => {
 
         async function delBirthday() {
             const res = await fetch(
-                "http://localhost:3001/delete/pg/birthday",
+                "https://calendar-app-femi.herokuapp.com/pg/birthday",
                 Params
             );
             const data = await res.json();
@@ -451,14 +451,12 @@ const BirthdayCalendar = (props) => {
     };
 
     function showBirthdayTable(){
-        console.log(data)
         const nameArray = [];
         const sortedDataArray = [];
-        data.map(d => {
-            nameArray.push(d.eventName.toLowerCase());
-        });
+        data.map(d =>
+            nameArray.push(d.eventName.toLowerCase())
+        );
         nameArray.sort();
-        console.log(nameArray)
         nameArray.map(name =>{
             data.map(birthday => {
                 const birthname = birthday.eventName.toLowerCase();
@@ -488,7 +486,6 @@ const BirthdayCalendar = (props) => {
                 </table>
                 `;
             table.innerHTML = dataText;
-        console.log(sortedDataArray)
         sortedDataArray.map(data => {
             const dataDiv = `
                 <tr key=${Math.random()}>
@@ -498,12 +495,12 @@ const BirthdayCalendar = (props) => {
                 </tr>
             `;
            const tableDiv = document.getElementById("tableData");
-            tableDiv.insertAdjacentHTML("beforeend", dataDiv);
+           return tableDiv.insertAdjacentHTML("beforeend", dataDiv);
         });
     };
     showBirthdayTable();
   };
-});
+}, [props.birthdayData]);
 
 
     if (redirect === null){

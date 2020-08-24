@@ -51,6 +51,61 @@ h6 {
 	z-index: 99999;
 }
 
+.give-popup {
+	position: fixed;
+	display: none;
+	left: 15px;
+	bottom: 15px;
+	z-index: 999999;
+	transition: all 3s;
+}
+.give-popup button {
+	width: 50px;
+	height: 40px;
+	border: none;
+	font-weight: 700;
+	border-radius: 4px;
+	background: var(--blue-color);
+	color: var(--white-color);
+}
+.give-popup button:focus {
+	outline: none;
+}
+.give-text {
+	background-color: var(--black-transparent-bg);
+	color: var(--white-color);
+	transition: all 2s;
+	padding: 5px;
+	border: solid 1px;
+	border-radius: 10px;
+	display: none;
+}
+.give-popup.reduced {
+	background-color: var(--black-transparent-bg);
+	border: solid 1px;
+	animation: reduced 2s;
+}
+@keyframes enlarged {
+	0% {
+		width: 50px;
+		height: 40px;
+	}
+	100% {
+		width: auto;
+		height: auto;
+	}
+}
+
+@keyframes reduced {
+	0% {
+		width: 80vw;
+		height: 20vh;
+	}
+	100% {
+		width: 50px;
+		height: 40px;
+	}
+}
 .back-to-top i {
 	display: flex;
 	align-items: center;
@@ -475,7 +530,6 @@ h6 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 10px;
-	box-shadow: 0px 2px 15px var(--black-transparent-bg);
 }
 
 #hero h1 {
@@ -1754,9 +1808,9 @@ section {
 	border: 1px solid var(--black-color);
 	background: var(--white-color);
 }
-
 .login input:focus {
 	outline: none;
+	background: var(--white-color);
 }
 
 .login .login-btn {
@@ -1848,6 +1902,9 @@ section {
 	}
 	.login input {
 		width: 250px;
+	}
+	#calendar-title h2 {
+		font-size: 20px;
 	}
 }
 
@@ -2401,7 +2458,7 @@ section {
 	overflow: hidden;
 }
 
-.header {
+#calendar .header {
 	height: 50px;
 	width: 400px;
 	background: rgba(66, 66, 66, 1);
@@ -2416,7 +2473,7 @@ section {
 	margin-top: 15vh;
 }
 
-.header h1 {
+#calendar .header h1 {
 	margin: 0;
 	padding: 0;
 	font-size: 20px;
@@ -2425,8 +2482,8 @@ section {
 	letter-spacing: 1px;
 }
 
-.left,
-.right {
+#calendar .left,
+#calendar .right {
 	position: absolute;
 	width: 0px;
 	height: 0px;
@@ -2436,44 +2493,44 @@ section {
 	cursor: pointer;
 }
 
-.left {
+#calendar .left {
 	border-width: 7.5px 10px 7.5px 0;
 	border-color: transparent rgba(160, 159, 160, 1) transparent transparent;
 	left: 20px;
 }
 
-.right {
+#calendar .right {
 	border-width: 7.5px 0 7.5px 10px;
 	border-color: transparent transparent transparent rgba(160, 159, 160, 1);
 	right: 20px;
 }
 
-.month {
+#calendar .month {
 	/*overflow: hidden;*/
 	opacity: 0;
 }
 
-.month.new {
+#calendar .month.new {
 	-webkit-animation: fadeIn 1s ease-out;
 	animation: fadeIn 1s ease-out;
 	opacity: 1;
 }
 
-.month.in.next {
+#calendar .month.in.next {
 	-webkit-animation: moveFromTopFadeMonth 0.4s ease-out;
 	-moz-animation: moveFromTopFadeMonth 0.4s ease-out;
 	animation: moveFromTopFadeMonth 0.4s ease-out;
 	opacity: 1;
 }
 
-.month.out.next {
+#calendar .month.out.next {
 	-webkit-animation: moveToTopFadeMonth 0.4s ease-in;
 	-moz-animation: moveToTopFadeMonth 0.4s ease-in;
 	animation: moveToTopFadeMonth 0.4s ease-in;
 	opacity: 1;
 }
 
-.month.in.prev {
+#calendar .month.in.prev {
 	-webkit-animation: moveFromBottomFadeMonth 0.4s ease-out;
 	-moz-animation: moveFromBottomFadeMonth 0.4s ease-out;
 	animation: moveFromBottomFadeMonth 0.4s ease-out;
@@ -2487,11 +2544,11 @@ section {
 	opacity: 1;
 }
 
-.week {
+#calendar .week {
 	background: #4a4a4a;
 }
 
-.day {
+#calendar .day {
 	display: inline-block;
 	width: 55px;
 	padding: 10px 10px 0 10px;
@@ -2503,7 +2560,7 @@ section {
 	z-index: 100;
 }
 
-.day.other {
+#calendar .day.other {
 	color: rgba(255, 255, 255, 0.3);
 }
 
@@ -2547,20 +2604,20 @@ section {
 	margin: 0 1px;
 }
 
-.blue {
+#calendar .blue {
 	background: rgba(156, 202, 235, 1);
 }
-.orange {
+#calendar .orange {
 	background: rgba(247, 167, 0, 1);
 }
-.green {
+#calendar .green {
 	background: rgb(125, 212, 38);
 }
-.yellow {
+#calendar .yellow {
 	background: rgba(249, 233, 0, 1);
 }
 
-.details {
+#calendar .details {
 	position: relative;
 	width: 400px;
 	height: 75px;
@@ -2570,19 +2627,19 @@ section {
 	left: 0 !important;
 }
 
-.details.in {
+#calendar .details.in {
 	-webkit-animation: moveFromTopFade 0.5s ease both;
 	-moz-animation: moveFromTopFade 0.5s ease both;
 	animation: moveFromTopFade 0.5s ease both;
 }
 
-.details.out {
+#calendar .details.out {
 	-webkit-animation: moveToTopFade 0.5s ease both;
 	-moz-animation: moveToTopFade 0.5s ease both;
 	animation: moveToTopFade 0.5s ease both;
 }
 
-.arrow {
+#calendar .arrow {
 	position: absolute;
 	top: -5px;
 	left: 50%;
@@ -2595,38 +2652,38 @@ section {
 	transition: all 0.7s ease;
 }
 
-.events {
+#calendar .events {
 	height: 75px;
 	padding: 7px 0;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
 
-.events.in {
+#calendar .events.in {
 	-webkit-animation: fadeIn 0.3s ease both;
 	-moz-animation: fadeIn 0.3s ease both;
 	animation: fadeIn 0.3s ease both;
 }
 
-.events.in {
+#calendar .events.in {
 	-webkit-animation-delay: 0.3s;
 	-moz-animation-delay: 0.3s;
 	animation-delay: 0.3s;
 }
 
-.details.out .events {
+#calendar .details.out .events {
 	-webkit-animation: fadeOutShrink 0.4s ease both;
 	-moz-animation: fadeOutShink 0.4s ease both;
 	animation: fadeOutShink 0.4s ease both;
 }
 
-.events.out {
+#calendar .events.out {
 	-webkit-animation: fadeOut 0.3s ease both;
 	-moz-animation: fadeOut 0.3s ease both;
 	animation: fadeOut 0.3s ease both;
 }
 
-.event {
+#calendar .event {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 700;
@@ -2635,11 +2692,11 @@ section {
 	vertical-align: top;
 }
 
-.event.empty {
+#calendar .event.empty {
 	color: #eee;
 }
 
-.event-category {
+#calendar .event-category {
 	height: 10px;
 	width: 10px;
 	display: inline-block;
@@ -2647,21 +2704,12 @@ section {
 	vertical-align: top;
 }
 
-.event span {
+#calendar .event span {
 	display: inline-block;
 	padding: 0 0 0 7px;
 }
 
-.legend {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 30px;
-	background: rgba(60, 60, 60, 1);
-	line-height: 30px;
-}
-
-.entry {
+#calendar .entry {
 	position: relative;
 	padding: 0 0 0 25px;
 	font-size: 13px;
@@ -2670,7 +2718,7 @@ section {
 	background: transparent;
 }
 
-.entry:after {
+#calendar .entry:after {
 	position: absolute;
 	content: "";
 	height: 5px;
@@ -2679,16 +2727,16 @@ section {
 	left: 14px;
 }
 
-.entry.blue:after {
+#calendar .entry.blue:after {
 	background: rgba(156, 202, 235, 1);
 }
-.entry.orange:after {
+#calendar .entry.orange:after {
 	background: rgba(247, 167, 0, 1);
 }
-.entry.green:after {
+#calendar .entry.green:after {
 	background: rgba(153, 198, 109, 1);
 }
-.entry.yellow:after {
+#calendar .entry.yellow:after {
 	background: rgba(249, 233, 0, 1);
 }
 

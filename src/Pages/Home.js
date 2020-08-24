@@ -12,6 +12,7 @@ import Gallery from "../Components/Homepage/Gallery";
 import Team from "../Components/Homepage/Team";
 import Contact from "../Components/Homepage/Contact";
 import Footer from "../Components/Homepage/Footer";
+import Popup from "../Components/Give/Popup";
 
  class Home extends React.Component {
   render() {
@@ -31,6 +32,7 @@ import Footer from "../Components/Homepage/Footer";
       </section>
 
     <main id="main">
+      <Popup />
       <About />
       <Partners />
       <Counts />

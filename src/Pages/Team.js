@@ -2,6 +2,7 @@ import React from 'react';
 import Header from "../Components/Team/Header";
 import Excos from "../Components/Team/Excos";
 import Footer from "../Components/Homepage/Footer";
+import Popup from '../Components/Give/Popup';
 
 export default
 class Home extends React.Component {
@@ -9,6 +10,7 @@ class Home extends React.Component {
    return (
         <>
         <Header  toggleClass={this.props.toggleClass}/>
+        <Popup />
         <Excos />
         <Footer />
         </>

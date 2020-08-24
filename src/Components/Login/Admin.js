@@ -36,7 +36,7 @@ export default class Admin extends Component {
                 method: "POST"
             };
             const sendData = async function(){
-             const res = await fetch("http://localhost:3001/admin/login", Params);
+             const res = await fetch("https://calendar-app-femi.herokuapp.com/admin/login", Params);
                 const data = await res.json();
                 loading.style.display = "none";
                 loginBtn.style.display = "flex";
@@ -86,7 +86,7 @@ export default class Admin extends Component {
                 </form>
             <div className="loading"><p>Loading...</p></div>
              <div className="failed">
-                 <h6>Invalid username or password, Please try again</h6>
+                 <h6 className="text-center">Invalid username or password,<br/> Please try again</h6>
              </div>
             </div>
             </div>
