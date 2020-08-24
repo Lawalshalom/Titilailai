@@ -25,7 +25,9 @@ body {
 	--watermark-bg: url("https://res.cloudinary.com/lawfirm1000/image/upload/v1593830557/SCM-logo-new_xhrtm4.png")
 		center no-repeat;
 }
-
+*::-webkit-scrollbar {
+	display: none;
+}
 a {
 	color: var(--blue-color);
 	text-decoration: none;
@@ -517,6 +519,9 @@ h6 {
 #hero {
 	width: 100%;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-top: 50px;
 	background-color: var(--white-color);
 }
