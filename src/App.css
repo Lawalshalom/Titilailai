@@ -1809,6 +1809,7 @@ section {
 .login input {
 	height: 50px;
 	width: 350px;
+	padding: 20px;
 	border-radius: 20px;
 	border: 1px solid var(--black-color);
 	background: var(--white-color);

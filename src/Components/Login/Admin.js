@@ -74,11 +74,11 @@ export default class Admin extends Component {
                 <form>
                     <div className="loginId">
                         <label>Username</label>
-                        <input type="name"name="username" autoComplete="true" minLength="3" maxLength="15" required placeholder="Enter Username"/>
+                        <input type="name"name="username" autoComplete="true" minLength="3" maxLength="15" required placeholder="Username"/>
                     </div>
                     <div className="password">
                         <label>Password</label>
-                        <input type="password" name="password" minLength="5" maxLength="15" required placeholder="Enter Password" />
+                        <input type="password" name="password" minLength="5" maxLength="15" required placeholder="Password" />
                     </div>
                     <div className="login-btn">
                         <button type="submit">Login</button>
