@@ -415,7 +415,7 @@ const BirthdayCalendar = (props) => {
 
         async function delBirthday() {
             const res = await fetch(
-                "https://calendar-app-femi.herokuapp.com/pg/birthday",
+                "https://calendar-app-femi.herokuapp.com/delete/pg/birthday",
                 Params
             );
             const data = await res.json();
