@@ -10,7 +10,8 @@ export default class Services extends React.Component {
 
       <div className="section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Our regular weekly meetings include:</p>
+        <p className="text-left">SCM is a fellowship and we encourage our members to be active members of a church. As SCM is ecumenical and inter-denominational in nature, we welcome members from all churches and denominations to fellowship with us</p>
+        <p className="text-left">Our regular weekly meetings include:</p>
       </div>
 
       <div className="row">
