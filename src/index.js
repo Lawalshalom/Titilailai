@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
-//import Placeholder from './Placeholder';
+import Placeholder from './Placeholder';
 
  ReactDOM.render(
   <BrowserRouter>
   <div className="section-bg"></div>
-    <App />
+    <Placeholder />
   </BrowserRouter>,
   document.getElementById('root')
 );
