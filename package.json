@@ -7,7 +7,10 @@
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.5.0",
 		"@testing-library/user-event": "^7.2.1",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
 		"emailjs-com": "^2.4.1",
+		"express": "^4.17.1",
 		"express-validator": "^6.6.0",
 		"jquery": "^3.5.1",
 		"jquery-countup": "^1.0.1",
@@ -23,7 +26,7 @@
 		"sass": "^1.26.8"
 	},
 	"scripts": {
-		"start": "react-scripts start",
+		"start": "node server.js",
 		"build": "CI= react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
