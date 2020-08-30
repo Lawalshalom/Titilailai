@@ -115,7 +115,7 @@ const formDiv = document.querySelectorAll(".form-group");
           <form className="php-email-form" onSubmit={this.sendData}>
             <div className="form-group">
               <input type="text" name="name" className="form-control"
-              id="name" placeholder="FirstName LastName" required minLength="3"
+              id="name" placeholder="Firstname Lastname" required minLength="3"
               maxLength="30" pattern="[a-zA-Z]{3,}\s[a-zA-Z]{3,}" value={this.state.name} onChange={this.nameData}/>
             </div>
             <div className="form-group">

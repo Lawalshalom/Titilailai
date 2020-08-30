@@ -40,6 +40,11 @@ export default function Details() {
             <br/>
             <p><strong>Polaris Bank</strong> <em>(formerly Skye Bank)</em> – <strong>4090746902</strong></p>
             <p><strong>Account Name:</strong> Student Christian Movement</p>
+            <br/>
+            <p>Or give to the alumni fellowship via:
+            <br/><strong>GT Bank</strong> – <strong>0177494854</strong>
+            <br/><strong>Account Name:</strong> SCM UI Alumni</p>
+
             </div>
             </div>
         </div>

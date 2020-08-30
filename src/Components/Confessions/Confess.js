@@ -62,7 +62,7 @@ export default class Confess extends Component {
                 <br/>AS CHRIST IS, SO ARE WE IN THIS WORLD.</strong>
                 <br/>(JOHN 5:13-14, 1 JOHN 4:17)
                 </p>
-                <div class="sharethis-inline-share-buttons"></div>
+                <div className="sharethis-inline-share-buttons"></div>
             </div>
 
         </section>
