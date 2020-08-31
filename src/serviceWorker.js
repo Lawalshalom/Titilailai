@@ -73,6 +73,11 @@ function registerValidSW(swUrl, config) {
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
               );
+              document.querySelector(".serviceWorkerPopup").style.display = "block";
+              document.querySelector(".serviceWorkerPopup").innerHTML = `<p><i class="icofont-info-circle"></i>New content is available and will be used when all tabs for this page are closed.</p>`
+              window.setTimeout(function(){
+                document.querySelector(".serviceWorkerPopup").style.display = "none"
+              }, 10000);
 
               // Execute callback
               if (config && config.onUpdate) {
@@ -84,9 +89,10 @@ function registerValidSW(swUrl, config) {
               // "Content is cached for offline use." message.
               console.log('Content is cached for offline use.');
               document.querySelector(".serviceWorkerPopup").style.display = "block";
+              document.querySelector(".serviceWorkerPopup").innerHTML = `<p><i class="icofont-info-circle"></i>Site is now ready for offline use!</p>`
               window.setTimeout(function(){
                 document.querySelector(".serviceWorkerPopup").style.display = "none"
-              }, 3000);
+              }, 5000);
 
 
               // Execute callback
@@ -130,6 +136,11 @@ function checkValidServiceWorker(swUrl, config) {
       console.log(
         'No internet connection found. App is running in offline mode.'
       );
+      document.querySelector(".serviceWorkerPopup").style.display = "block";
+      document.querySelector(".serviceWorkerPopup").innerHTML = `<p><i class="icofont-info-circle"></i>No internet connection found. App is running in offline mode.</p>`
+      window.setTimeout(function(){
+        document.querySelector(".serviceWorkerPopup").style.display = "none"
+      }, 5000);
     });
 }
 

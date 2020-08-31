@@ -28,9 +28,7 @@ const Popup = () => {
             <br/><strong>Account Name:</strong> SCM UI Alumni</p>
             </div>
         </div>
-        <div className="serviceWorkerPopup">
-        <p><i className="icofont-info-circle"></i>Site is now ready for offline use!</p>
-        </div>
+        <div className="serviceWorkerPopup"></div>
         </>
     )
 };
