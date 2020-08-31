@@ -1,6 +1,6 @@
 {
 	"short_name": "SCM UI",
-	"name": "Student Christian Movement of Nigeria, University of Ibadan",
+	"name": "SCM UI",
 	"icons": [
 		{
 			"src": "favicon.ico",
@@ -13,12 +13,12 @@
 			"sizes": "192x192"
 		},
 		{
-			"src": "sxm-icon-512.png",
+			"src": "scm-icon-512.png",
 			"type": "image/png",
 			"sizes": "512x512"
 		}
 	],
-	"start_url": ".",
+	"start_url": "./index.html",
 	"display": "standalone",
 	"theme_color": "#000000",
 	"background_color": "#ffffff"

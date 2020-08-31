@@ -83,6 +83,11 @@ function registerValidSW(swUrl, config) {
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               console.log('Content is cached for offline use.');
+              document.querySelector(".serviceWorkerPopup").style.display = "block";
+              window.setTimeout(function(){
+                document.querySelector(".serviceWorkerPopup").style.display = "none"
+              }, 3000);
+
 
               // Execute callback
               if (config && config.onSuccess) {

@@ -52,6 +52,16 @@ h6 {
 	bottom: 15px;
 	z-index: 99999;
 }
+.serviceWorkerPopup {
+	background: var(--black-transparent-bg);
+	width: fit-content;
+	color: var(--white-color);
+	padding: 2px;
+	position: fixed;
+	top: 60px;
+	left: 15px;
+	display: none;
+}
 
 .give-popup {
 	position: fixed;
