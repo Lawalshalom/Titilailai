@@ -178,10 +178,10 @@ export default class Programmes extends Component {
                     <h2 data-aos="fade-right" data-aos-delay="200"><li>Evangeltainment</li></h2>
                     <div className="owl-carousel evang-carousel" data-aos="fade-up" data-aos-delay="200">
                       <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594209735/evangeltainment-new-4_hjfhuj.png" alt=""/>
-                      <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594170929/evangeltainment-2_mrfdce.png" alt=""/>
+                      <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1598816295/SCM%20UI%20Project/evangeltainment-2_jqvfbv.png" alt=""/>
                       <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594170922/evangeltainment-1_y7mg5v.png" alt=""/>
-                      <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594170946/evangeltainment-5_ifdlkr.png" alt=""/>
                       <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594209730/evangeltainment-new_ghccba.png" alt=""/>
+                      <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1598816296/SCM%20UI%20Project/evangeltainment-5_u7x0dv.png" alt=""/>
                       <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594209730/evangeltainment-new-1_xv67bw.png" alt=""/>
                       <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594210647/evangeltainment-new-5_kxgpwm.png" alt=""/>
                       <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1594170963/evangeltainment-7_vgsuym.png" alt=""/>
