@@ -112,6 +112,15 @@ export default class Programmes extends Component {
                       </div>
 
                       <div className="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div className="icon-box" data-aos="fade-up" data-aos-delay="300">
+                          <div className="icon"><i class="icofont-users-social"></i></div>
+                          <h4 className="title">Tuesday, Newbreed Service</h4>
+                          <p className="description"> The freshers house of SCM UI, Newbreed holds her meetings every Tuesday by 7:00PM - 8:30PM at Chapel Basement, Chapel of the Resurrection, University of Ibadan.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div className="icon-box" data-aos="fade-up" data-aos-delay="200">
                           <div className="icon"><i className="bx bxs-bible bx-burst"></i></div>
                           <h4 className="title">Thursday, Bible Study</h4>
