@@ -69,10 +69,7 @@ function registerValidSW(swUrl, config) {
               // At this point, the updated precached content has been fetched,
               // but the previous service worker will still serve the older
               // content until all client tabs are closed.
-              console.log(
-                'New content is available and will be used when all ' +
-                  'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
-              );
+
               document.querySelector(".serviceWorkerPopup").style.display = "block";
               document.querySelector(".serviceWorkerPopup").innerHTML = `<p><i class="icofont-info-circle"></i>New content is available and will be used when all tabs for this page are closed.</p>`
               window.setTimeout(function(){
@@ -84,12 +81,8 @@ function registerValidSW(swUrl, config) {
                 config.onUpdate(registration);
               }
             } else {
-              // At this point, everything has been precached.
-              // It's the perfect time to display a
-              // "Content is cached for offline use." message.
-              console.log('Content is cached for offline use.');
               document.querySelector(".serviceWorkerPopup").style.display = "block";
-              document.querySelector(".serviceWorkerPopup").innerHTML = `<p><i class="icofont-info-circle"></i>Site is now ready for offline use!</p>`
+              document.querySelector(".serviceWorkerPopup").innerHTML = `<p><i class="icofont-info-circle"></i>This site can be viewed even when offline!</p>`
               window.setTimeout(function(){
                 document.querySelector(".serviceWorkerPopup").style.display = "none"
               }, 5000);
@@ -133,9 +126,6 @@ function checkValidServiceWorker(swUrl, config) {
       }
     })
     .catch(() => {
-      console.log(
-        'No internet connection found. App is running in offline mode.'
-      );
       document.querySelector(".serviceWorkerPopup").style.display = "block";
       document.querySelector(".serviceWorkerPopup").innerHTML = `<p><i class="icofont-info-circle"></i>No internet connection found. App is running in offline mode.</p>`
       window.setTimeout(function(){
