@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div className="site-branding d-flex align-items-center">
-                           <a data-aos="fade-down" className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo" /></a>
+                           <a data-aos="fade-down" className="d-block" href="/" rel="home"><img className="d-block" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1602714213/WebRec/logo_nrpb6t.png" alt="logo" /></a>
                         </div>
 
                         <nav className="site-navigation d-flex justify-content-end align-items-center">
@@ -40,7 +40,7 @@ const Home = () => {
 
         <div className="swiper-container hero-slider">
             <div className="swiper-wrapper">
-                <div className="swiper-slide hero-content-wrap" style={{backgroundImage: "url('images/hero.jpg')"}}>
+                <div className="swiper-slide hero-content-wrap" style={{backgroundImage: "url('https://res.cloudinary.com/lawfirm1000/image/upload/v1602714212/WebRec/hero_jwo8w4.jpg')"}}>
                     <div className="hero-content-overlay position-absolute w-100 h-100">
                         <div className="container h-100">
                             <div className="row h-100">
@@ -78,7 +78,7 @@ const Home = () => {
                 </div>
 
                 <div className="col-12 col-lg-6 mt-5 mt-lg-0">
-                    <img data-aos="fade-left" className="responsive" src="images/medrec/img7.jpeg" alt=""/>
+                    <img data-aos="fade-left" className="responsive" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1602714209/WebRec/img7_z6n5da.jpg" alt=""/>
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@ const Home = () => {
                 </div>
 
                 <div className="col-12 col-lg-6 mt-5 mt-lg-0">
-                    <img data-aos="fade-right" className="responsive" src="images/medrec/img4.jpeg" alt=""/>
+                    <img data-aos="fade-right" className="responsive" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1602714211/WebRec/img4_r5c21h.jpg" alt=""/>
                 </div>
             </div>
         </div>

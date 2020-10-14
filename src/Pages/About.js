@@ -55,7 +55,7 @@ const About = () => {
             </div>
         </div>
 
-        <img  data-aos="fade-left" className="header-img" src="images/about-bg.png" alt=""/>
+        <img  data-aos="fade-left" className="header-img" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1602714215/WebRec/about-bg_yybmu4.png" alt=""/>
     </header>
 
     <div className="med-history">

@@ -54,7 +54,7 @@ const Contact = () => {
             </div>
         </div>
 
-        <img data-aos="fade-left" className="header-img" src="images/contact-bg.png" alt=""/>
+        <img data-aos="fade-left" className="header-img" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1602714209/WebRec/contact-bg_ehfdg2.png" alt=""/>
     </header>
 
 
