@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div className="site-branding d-flex align-items-center">
-                           <a className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo" /></a>
+                           <a data-aos="fade-down" className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo" /></a>
                         </div>
 
                         <nav className="site-navigation d-flex justify-content-end align-items-center">
@@ -46,15 +46,15 @@ const Home = () => {
                             <div className="row h-100">
                                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
                                     <header className="entry-header">
-                                        <h1>Digital  <br/>Health Records</h1>
+                                        <h1 data-aos="fade-right">Digital  <br/>Health Records</h1>
                                     </header>
 
                                     <div className="entry-content mt-4">
-                                        <p>All your medical records in one place. Saving, retrieving, sorting and searching through health records has not been easier!</p>
+                                        <p data-aos="fade-up">All your medical records in one place. Saving, retrieving, sorting and searching through health records has not been easier!</p>
                                     </div>
 
                                     <footer className="entry-footer d-flex flex-wrap align-items-center mt-4">
-                                        <a href="#about" className="button gradient-bg">Read More</a>
+                                        <a data-aos="fade-up" href="#about" className="button gradient-bg">Read More</a>
                                     </footer>
                                 </div>
                             </div>
@@ -70,15 +70,15 @@ const Home = () => {
         <div className="container">
             <div className="row align-items-end">
                 <div className="col-12 col-lg-6">
-                    <h2>What is MedRec?</h2>
+                    <h2 data-aos="fade-up">What is MedRec?</h2>
 
-                    <p>MedRec is a digital solution to the health record system. It seeks to replace the traditional paper health records system by providing an easy way to save, sort, retrieve, and visualize record data in a simple yet secured interface. <br/> MedRec is constantly maintained by a group of health-tech enthusaists who are committed to improving it's quality and improving user experience.</p>
+                    <p data-aos="fade-up">MedRec is a digital solution to the health record system. It seeks to replace the traditional paper health records system by providing an easy way to save, sort, retrieve, and visualize record data in a simple yet secured interface. <br/> MedRec is constantly maintained by a group of health-tech enthusaists who are committed to improving it's quality and improving user experience.</p>
 
-                    <a className="d-inline-block button gradient-bg" href="/about">Read More</a>
+                    <a data-aos="fade-up" className="d-inline-block button gradient-bg" href="/about">Read More</a>
                 </div>
 
                 <div className="col-12 col-lg-6 mt-5 mt-lg-0">
-                    <img className="responsive" src="images/medrec/img7.jpeg" alt=""/>
+                    <img data-aos="fade-left" className="responsive" src="images/medrec/img7.jpeg" alt=""/>
                 </div>
             </div>
         </div>
@@ -89,25 +89,25 @@ const Home = () => {
         <div className="container">
             <div className="row align-items-end">
                 <div className="col-12 col-lg-6">
-                    <h2>How Does It Work?</h2>
+                    <h2 data-aos="fade-up">How Does It Work?</h2>
 
-                    <p>It all starts with registering your hospital. Once your healthcare center is registered with us, you as a healthcare provider can sign up as a user under your hospital to start saving up health records of patients you see in your hospital.
+                    <p data-aos="fade-up">It all starts with registering your hospital. Once your healthcare center is registered with us, you as a healthcare provider can sign up as a user under your hospital to start saving up health records of patients you see in your hospital.
                       <br/> You can then sort through, search and see all your saved records whenever required. Moreso, with appropriate authorization, you could look up records of other patients saved under your hospital and even in the country!
                       <br/> What more? You can save up your record even while offline and it gets uploaded automatically when you have internet access! See your patients data statistics with our data visualizations and lots more!
                     </p>
 
-                    <a className="d-inline-block button gradient-bg" href="/login">Sign Up</a>
+                    <a data-aos="fade-up" className="d-inline-block button gradient-bg" href="/login">Sign Up</a>
                 </div>
 
                 <div className="col-12 col-lg-6 mt-5 mt-lg-0">
-                    <img className="responsive" src="images/medrec/img4.jpeg" alt=""/>
+                    <img data-aos="fade-right" className="responsive" src="images/medrec/img4.jpeg" alt=""/>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div className="subscribe-banner">
+    <div data-aos="fade-up" className="subscribe-banner">
         <div className="container">
             <div className="row">
                 <div className="col-12 col-lg-8 offset-lg-2">

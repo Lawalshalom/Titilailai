@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-4">
-                        <div className="foot-about">
+                        <div  data-aos="fade-up" className="foot-about">
                             <h2><a href="/"><img src="images/logo.png" alt=""/></a></h2>
 
                             <p>All your medical records in one place.</p>
@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
-                        <div className="foot-contact">
+                        <div  data-aos="fade-up" className="foot-contact">
                             <h2>Contact</h2>
 
                             <ul className="p-0 m-0">
@@ -28,7 +28,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
-                        <div className="foot-links">
+                        <div  data-aos="fade-up" className="foot-links">
                             <h2>Links</h2>
 
                             <ul className="p-0 m-0">

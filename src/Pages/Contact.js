@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className="row">
                     <div className="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div className="site-branding d-flex align-items-center">
-                            <a className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo"/></a>
+                            <a data-aos="fade-up" className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo"/></a>
                         </div>
 
                         <nav className="site-navigation d-flex justify-content-end align-items-center">
@@ -41,9 +41,9 @@ const Contact = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <h1>Contact</h1>
+                    <h1 data-aos="fade-left">Contact</h1>
 
-                    <div className="breadcrumbs">
+                    <div data-aos="fade-down" data-aos-delay="200" className="breadcrumbs">
                         <ul className="d-flex flex-wrap align-items-center p-0 m-0">
                             <li><a href="/">Home</a></li>
                             <li>Contact</li>
@@ -54,13 +54,13 @@ const Contact = () => {
             </div>
         </div>
 
-        <img className="header-img" src="images/contact-bg.png" alt=""/>
+        <img data-aos="fade-left" className="header-img" src="images/contact-bg.png" alt=""/>
     </header>
 
 
     <div className="contact-form">
         <div className="container">
-            <div className="row">
+            <div data-aos="fade-up" className="row">
                 <div className="col-12">
                     <h2>Get in Touch</h2>
                 </div>
@@ -88,7 +88,7 @@ const Contact = () => {
         </div>
     </div>
 
-    <div className="subscribe-banner">
+    <div data-aos="fade-up" className="subscribe-banner">
         <div className="container">
             <div className="row">
                 <div className="col-12 col-lg-8 offset-lg-2">
