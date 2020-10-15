@@ -11,6 +11,10 @@ img {
   vertical-align: baseline;
 }
 
+main {
+  overflow: hidden;
+}
+
 * ::-webkit-scrollbar {
   display: none;
 }
