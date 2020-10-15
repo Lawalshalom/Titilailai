@@ -40,7 +40,7 @@ const Home = () => {
 
         <div className="swiper-container hero-slider">
             <div className="swiper-wrapper">
-                <div className="swiper-slide hero-content-wrap" style={{backgroundImage: "url('images/hero.jpg')"}}>
+                <div className="swiper-slide hero-content-wrap" style={{backgroundImage: "url('https://res.cloudinary.com/lawfirm1000/image/upload/v1602714212/WebRec/hero_jwo8w4.jpg')"}}>
                     <div className="hero-content-overlay position-absolute w-100 h-100">
                         <div className="container h-100">
                             <div className="row h-100">
