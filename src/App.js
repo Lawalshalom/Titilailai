@@ -41,11 +41,11 @@ componentDidMount(){
           <Switch>
               <Route path="/" render={renderprops =>
                 <Home {...renderprops} />} exact />
-              <Route path="/Story" render={renderprops =>
+              <Route path="/story" render={renderprops =>
                 <Story {...renderprops} />} />
-              <Route path="/Reception" render={renderprops =>
+              <Route path="/reception" render={renderprops =>
                 <Reception {...renderprops} />} />
-              <Route path="/Church" render={renderprops =>
+              <Route path="/church" render={renderprops =>
                 <Church {...renderprops} />} />
               <Route path="/gifts" render={renderprops =>
                   <Gifts {...renderprops} />} />
