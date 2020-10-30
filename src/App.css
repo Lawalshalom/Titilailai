@@ -85,7 +85,7 @@
 
 .site-navigation ul {
   position: fixed;
-  top: 0;
+  top: 20px;
   left: -320px;
   z-index: 9;
   width: 320px;
@@ -94,7 +94,6 @@
   height: -moz-max-content;
   height: max-content;
   padding: 30px 15px;
-  margin: 0;
   background: rgba(255, 255, 255, 0.6);
   list-style: none;
   overflow-x: scroll;
@@ -147,7 +146,7 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    margin: 0 5px;
+    margin: 20px 5px;
     padding: 0;
     background: transparent;
   }
@@ -352,7 +351,6 @@
 }
 
 .church .cont {
-  height: 95vh;
   background: url("images/8.webp") top/cover no-repeat;
 }
 
@@ -367,6 +365,10 @@
 .church .hero h1 span {
   font-family: "Montserrat";
   color: #fff;
+}
+
+.church .church-map {
+  margin: 30px 0 0 0;
 }
 
 .church .church-details {
@@ -396,6 +398,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .church .cont {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
   .church .hero h1 {
     font-size: 50px;
   }
