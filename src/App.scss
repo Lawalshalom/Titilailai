@@ -140,11 +140,10 @@
 @media screen and (min-width: 768px) {
 	.site-navigation ul {
 		position: absolute;
-		top: auto;
 		left: 0;
+		top: 15px;
 		width: 100%;
 		max-width: 100%;
-		height: auto;
 		margin: 20px 5px;
 		padding: 0;
 		background: transparent;
@@ -236,7 +235,7 @@
 .story {
 	h1 {
 		text-shadow: 0 0 5px #fff;
-		margin-top: 40px;
+		margin-top: 70px;
 		font-family: Lobster;
 		font-weight: bolder;
 		font-size: 180px;
@@ -335,8 +334,7 @@
 		h1 {
 			font-family: "Montserrat";
 			color: #8c2110;
-			font-size: 80px;
-			margin-left: 20px;
+			font-size: 60px;
 			text-shadow: 0 0 5px #fff;
 			span {
 				font-family: "Montserrat";
@@ -394,7 +392,6 @@
 			font-family: Lobster;
 			color: #fff;
 			font-size: 80px;
-			margin-left: 20px;
 			span {
 				font-family: Lobster;
 				color: #8c2110;
