@@ -152,13 +152,20 @@
     background: transparent;
   }
   .home .site-navigation ul li a,
-  .church .site-navigation ul li a {
+  .church .site-navigation ul li a,
+  .reception .site-navigation ul li a {
     color: #fff !important;
     font-weight: 700;
   }
   .home .site-navigation ul li a.active,
-  .church .site-navigation ul li a.active {
+  .church .site-navigation ul li a.active,
+  .reception .site-navigation ul li a.active {
     color: #8c2110 !important;
+  }
+  .home .site-navigation ul li a:hover,
+  .church .site-navigation ul li a:hover,
+  .reception .site-navigation ul li a:hover {
+    color: #b86e69 !important;
   }
   .site-navigation ul li a {
     width: 100%;
@@ -172,35 +179,42 @@
 }
 
 .home .hamburger-menu span,
-.church .hamburger-menu span {
+.church .hamburger-menu span,
+.reception .hamburger-menu span {
   background: #fff;
 }
 
 .home .cont,
-.church .cont {
+.church .cont,
+.reception .cont {
   height: 85vh;
   background: url("images/home.webp") center/cover no-repeat;
 }
 
 .home .hero,
-.church .hero {
+.church .hero,
+.reception .hero {
   margin-top: 70px;
 }
 
 .home .hero h1,
-.church .hero h1 {
+.church .hero h1,
+.reception .hero h1 {
+  text-shadow: 0 0 5px #fff;
   color: #8c2110;
   font-size: 80px;
   margin-left: 20px;
 }
 
 .home .hero h1 span,
-.church .hero h1 span {
+.church .hero h1 span,
+.reception .hero h1 span {
   color: #19559e;
 }
 
 .home .hero h3,
-.church .hero h3 {
+.church .hero h3,
+.reception .hero h3 {
   color: #8c2110;
   background: transparent;
   margin-left: 35px;
@@ -208,7 +222,8 @@
 }
 
 .home .hero svg,
-.church .hero svg {
+.church .hero svg,
+.reception .hero svg {
   margin-top: -45px;
   margin-left: 25px;
   width: 32ch;
@@ -244,6 +259,7 @@
 	STORY
 ******************/
 .story h1 {
+  text-shadow: 0 0 5px #fff;
   margin-top: 40px;
   font-family: Lobster;
   font-weight: bolder;
@@ -345,6 +361,7 @@
   color: #8c2110;
   font-size: 80px;
   margin-left: 20px;
+  text-shadow: 0 0 5px #fff;
 }
 
 .church .hero h1 span {
@@ -353,12 +370,12 @@
 }
 
 .church .church-details {
-  background: #19559e34;
+  background: #19559e86;
   color: #fff;
   border-radius: 50px;
   width: 450px;
-  -webkit-box-shadow: 0 0 5px 0 #fff;
-          box-shadow: 0 0 5px 0 #fff;
+  -webkit-box-shadow: 0 0 15px 0 #000;
+          box-shadow: 0 0 15px 0 #000;
   padding: 30px 10px;
   margin-top: 50px;
 }
@@ -371,6 +388,7 @@
 .church .church-details h3 span,
 .church .church-details h3 strong {
   color: #8c2110;
+  text-shadow: 0 0 15px #fff;
 }
 
 .church .church-details h3 .city {
@@ -383,6 +401,293 @@
   }
   .church .church-details {
     width: 350px;
+  }
+}
+
+/*****************
+	RECEPTION
+******************/
+.reception .cont {
+  background: url("images/home.webp") center/cover no-repeat;
+}
+
+.reception .hero h1 {
+  font-family: Lobster;
+  color: #fff;
+  font-size: 80px;
+  margin-left: 20px;
+}
+
+.reception .hero h1 span {
+  font-family: Lobster;
+  color: #8c2110;
+}
+
+.reception .hero .reception-details h3 {
+  font-family: Lobster;
+  color: #8c2110;
+}
+
+.reception .hero .reception-details h3 strong {
+  font-family: Lobster;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .reception .cont {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding-bottom: 20px;
+  }
+}
+
+.gifts .gift-details {
+  width: 70%;
+  margin: 60px auto;
+}
+
+.gifts .gift-details h1 {
+  color: #8c2110;
+  font-size: 80px;
+  font-family: Lobster;
+}
+
+.gifts .gift-details p,
+.gifts .gift-details a {
+  font-family: Lobster;
+  color: #002e5d;
+  margin: 20px 0;
+  font-size: 30px;
+  font-family: "Cookie";
+}
+
+.gifts .gift-details a {
+  text-decoration: underline;
+  color: #8c2110;
+}
+
+.gifts svg {
+  width: 100px;
+  stroke-width: 0;
+  fill-opacity: 1;
+  stroke: #fdca22;
+  stroke-opacity: 1;
+  fill: #fdca22;
+}
+
+/************
+	PHOTOS
+************/
+.gallery {
+  height: 80vh;
+  margin-top: 40px;
+  /* MD */
+  /* LG */
+}
+
+.gallery .carousel {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.gallery .carousel-item img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .gallery {
+    /* Show 4th slide on md if col-md-4*/
+  }
+  .gallery .carousel-inner
+.active.col-md-4.carousel-item
++ .carousel-item
++ .carousel-item
++ .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .gallery {
+    /* Show 3rd slide on sm if col-sm-6*/
+  }
+  .gallery .carousel-inner
+.active.col-sm-6.carousel-item
++ .carousel-item
++ .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 576px) {
+  .gallery {
+    /* show 2 items */
+    /* left or forward direction */
+    /* farthest right hidden item must be also positioned for animations */
+    /* right or prev direction */
+  }
+  .gallery .carousel-item {
+    margin-right: 0;
+  }
+  .gallery .carousel-inner .active + .carousel-item {
+    display: block;
+  }
+  .gallery .carousel-inner
+.carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .gallery .carousel-inner
+.carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
++ .carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .gallery .carousel-inner .carousel-item-next {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .gallery .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .gallery .carousel-item-next.carousel-item-left + .carousel-item,
+  .gallery .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  .gallery .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  .gallery .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .gallery .carousel-item-prev.carousel-item-right + .carousel-item,
+  .gallery .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    /* show 3rd of 3 item slide */
+    /* left or forward direction */
+    /* right or prev direction */
+  }
+  .gallery .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .gallery .carousel-inner
+.carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
++ .carousel-item
++ .carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .gallery .carousel-inner .carousel-item-next {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .gallery .carousel-item-next.carousel-item-left
++ .carousel-item
++ .carousel-item
++ .carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  .gallery .carousel-item-prev.carousel-item-right
++ .carousel-item
++ .carousel-item
++ .carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 991px) {
+  .gallery {
+    /* show 4th item */
+    /* Show 5th slide on lg if col-lg-3 */
+    /* left or forward direction */
+    /* right or prev direction //t - previous slide direction last item animation fix */
+  }
+  .gallery .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .gallery .carousel-inner
+.carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
++ .carousel-item
++ .carousel-item
++ .carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .gallery .carousel-inner
+.active.col-lg-3.carousel-item
++ .carousel-item
++ .carousel-item
++ .carousel-item
++ .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  .gallery .carousel-item-next.carousel-item-left
++ .carousel-item
++ .carousel-item
++ .carousel-item
++ .carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  .gallery .carousel-item-prev.carousel-item-right
++ .carousel-item
++ .carousel-item
++ .carousel-item
++ .carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=App.css.map */

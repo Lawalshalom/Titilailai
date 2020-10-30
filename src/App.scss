@@ -151,11 +151,15 @@
 		background: transparent;
 	}
 	.home .site-navigation ul li a,
-	.church .site-navigation ul li a {
+	.church .site-navigation ul li a,
+	.reception .site-navigation ul li a {
 		color: #fff !important;
 		font-weight: 700;
 		&.active {
 			color: #8c2110 !important;
+		}
+		&:hover {
+			color: #b86e69 !important;
 		}
 	}
 	.site-navigation ul li a {
@@ -170,7 +174,8 @@
 }
 
 .home,
-.church {
+.church,
+.reception {
 	.hamburger-menu span {
 		background: #fff;
 	}
@@ -181,6 +186,7 @@
 	.hero {
 		margin-top: 70px;
 		h1 {
+			text-shadow: 0 0 5px #fff;
 			color: #8c2110;
 			font-size: 80px;
 			margin-left: 20px;
@@ -230,6 +236,7 @@
 ******************/
 .story {
 	h1 {
+		text-shadow: 0 0 5px #fff;
 		margin-top: 40px;
 		font-family: Lobster;
 		font-weight: bolder;
@@ -332,6 +339,7 @@
 			color: #8c2110;
 			font-size: 80px;
 			margin-left: 20px;
+			text-shadow: 0 0 5px #fff;
 			span {
 				font-family: "Montserrat";
 				color: #fff;
@@ -339,11 +347,11 @@
 		}
 	}
 	.church-details {
-		background: #19559e34;
+		background: #19559e86;
 		color: #fff;
 		border-radius: 50px;
 		width: 450px;
-		box-shadow: 0 0 5px 0 #fff;
+		box-shadow: 0 0 15px 0 #000;
 		padding: 30px 10px;
 		margin-top: 50px;
 		h3 {
@@ -352,6 +360,7 @@
 			span,
 			strong {
 				color: #8c2110;
+				text-shadow: 0 0 15px #fff;
 			}
 			.city {
 				color: #8c2110;
@@ -366,5 +375,258 @@
 	}
 	.church .church-details {
 		width: 350px;
+	}
+}
+
+/*****************
+	RECEPTION
+******************/
+.reception {
+	.cont {
+		background: url("images/home.webp") center / cover no-repeat;
+	}
+	.hero {
+		h1 {
+			font-family: Lobster;
+			color: #fff;
+			font-size: 80px;
+			margin-left: 20px;
+			span {
+				font-family: Lobster;
+				color: #8c2110;
+			}
+		}
+		.reception-details h3 {
+			font-family: Lobster;
+			color: #8c2110;
+			strong {
+				font-family: Lobster;
+				color: #fff;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.reception .cont {
+		height: max-content;
+		padding-bottom: 20px;
+	}
+}
+
+.gifts {
+	.gift-details {
+		width: 70%;
+		margin: 60px auto;
+		h1 {
+			color: #8c2110;
+			font-size: 80px;
+			font-family: Lobster;
+		}
+		p,
+		a {
+			font-family: Lobster;
+			color: #002e5d;
+			margin: 20px 0;
+			font-size: 30px;
+			font-family: "Cookie";
+		}
+		a {
+			text-decoration: underline;
+			color: #8c2110;
+		}
+	}
+	svg {
+		width: 100px;
+		stroke-width: 0;
+		fill-opacity: 1;
+		stroke: rgb(253, 202, 34);
+		stroke-opacity: 1;
+		fill: rgb(253, 202, 34);
+	}
+}
+
+/************
+	PHOTOS
+************/
+
+.gallery {
+	height: 80vh;
+	margin-top: 40px;
+
+	.carousel {
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	.carousel-item {
+		img {
+			height: 100%;
+			border-radius: 50%;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+		/* Show 4th slide on md if col-md-4*/
+		.carousel-inner
+			.active.col-md-4.carousel-item
+			+ .carousel-item
+			+ .carousel-item
+			+ .carousel-item {
+			position: absolute;
+			top: 0;
+			right: -33.3333%; /*change this with javascript in the future*/
+			z-index: -1;
+			display: block;
+			visibility: visible;
+		}
+	}
+	@media (min-width: 576px) and (max-width: 768px) {
+		/* Show 3rd slide on sm if col-sm-6*/
+		.carousel-inner
+			.active.col-sm-6.carousel-item
+			+ .carousel-item
+			+ .carousel-item {
+			position: absolute;
+			top: 0;
+			right: -50%; /*change this with javascript in the future*/
+			z-index: -1;
+			display: block;
+			visibility: visible;
+		}
+	}
+	@media (min-width: 576px) {
+		.carousel-item {
+			margin-right: 0;
+		}
+		/* show 2 items */
+		.carousel-inner .active + .carousel-item {
+			display: block;
+		}
+		.carousel-inner
+			.carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+		.carousel-inner
+			.carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+			+ .carousel-item {
+			transition: none;
+		}
+		.carousel-inner .carousel-item-next {
+			position: relative;
+			transform: translate3d(0, 0, 0);
+		}
+		/* left or forward direction */
+		.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+		.carousel-item-next.carousel-item-left + .carousel-item,
+		.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+			position: relative;
+			transform: translate3d(-100%, 0, 0);
+			visibility: visible;
+		}
+		/* farthest right hidden item must be also positioned for animations */
+		.carousel-inner .carousel-item-prev.carousel-item-right {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			display: block;
+			visibility: visible;
+		}
+		/* right or prev direction */
+		.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+		.carousel-item-prev.carousel-item-right + .carousel-item,
+		.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+			position: relative;
+			transform: translate3d(100%, 0, 0);
+			visibility: visible;
+			display: block;
+			visibility: visible;
+		}
+	}
+	/* MD */
+	@media (min-width: 768px) {
+		/* show 3rd of 3 item slide */
+		.carousel-inner .active + .carousel-item + .carousel-item {
+			display: block;
+		}
+		.carousel-inner
+			.carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+			+ .carousel-item
+			+ .carousel-item {
+			transition: none;
+		}
+		.carousel-inner .carousel-item-next {
+			position: relative;
+			transform: translate3d(0, 0, 0);
+		}
+		/* left or forward direction */
+		.carousel-item-next.carousel-item-left
+			+ .carousel-item
+			+ .carousel-item
+			+ .carousel-item {
+			position: relative;
+			transform: translate3d(-100%, 0, 0);
+			visibility: visible;
+		}
+		/* right or prev direction */
+		.carousel-item-prev.carousel-item-right
+			+ .carousel-item
+			+ .carousel-item
+			+ .carousel-item {
+			position: relative;
+			transform: translate3d(100%, 0, 0);
+			visibility: visible;
+			display: block;
+			visibility: visible;
+		}
+	}
+	/* LG */
+	@media (min-width: 991px) {
+		/* show 4th item */
+		.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+			display: block;
+		}
+		.carousel-inner
+			.carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+			+ .carousel-item
+			+ .carousel-item
+			+ .carousel-item {
+			transition: none;
+		}
+		/* Show 5th slide on lg if col-lg-3 */
+		.carousel-inner
+			.active.col-lg-3.carousel-item
+			+ .carousel-item
+			+ .carousel-item
+			+ .carousel-item
+			+ .carousel-item {
+			position: absolute;
+			top: 0;
+			right: -25%; /*change this with javascript in the future*/
+			z-index: -1;
+			display: block;
+			visibility: visible;
+		}
+		/* left or forward direction */
+		.carousel-item-next.carousel-item-left
+			+ .carousel-item
+			+ .carousel-item
+			+ .carousel-item
+			+ .carousel-item {
+			position: relative;
+			transform: translate3d(-100%, 0, 0);
+			visibility: visible;
+		}
+		/* right or prev direction //t - previous slide direction last item animation fix */
+		.carousel-item-prev.carousel-item-right
+			+ .carousel-item
+			+ .carousel-item
+			+ .carousel-item
+			+ .carousel-item {
+			position: relative;
+			transform: translate3d(100%, 0, 0);
+			visibility: visible;
+			display: block;
+			visibility: visible;
+		}
 	}
 }
