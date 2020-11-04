@@ -128,11 +128,13 @@ p {
 		position: absolute;
 		width: 100%;
 		left: 0;
+		top: 10px;
 		.container {
 			justify-content: center;
 		}
 		img {
 			width: 120px;
+			height: 120px;
 		}
 	}
 	li {
@@ -264,7 +266,7 @@ p {
 .story {
 	h1 {
 		text-shadow: 0 0 5px #fff;
-		margin-top: 70px;
+		margin-top: 100px;
 		font-family: Lobster;
 		font-weight: bolder;
 		font-size: 180px;

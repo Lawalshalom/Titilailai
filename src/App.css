@@ -127,6 +127,7 @@ p {
   position: absolute;
   width: 100%;
   left: 0;
+  top: 10px;
 }
 
 .header .nav-logo .container {
@@ -137,6 +138,7 @@ p {
 
 .header .nav-logo img {
   width: 120px;
+  height: 120px;
 }
 
 .header li a {
@@ -293,7 +295,7 @@ p {
 ******************/
 .story h1 {
   text-shadow: 0 0 5px #fff;
-  margin-top: 70px;
+  margin-top: 100px;
   font-family: Lobster;
   font-weight: bolder;
   font-size: 180px;
