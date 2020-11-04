@@ -12,6 +12,10 @@ const Footer = () => {
             </svg>
             DECEMBER 19, 2020.
            </p>
+            <p className="d-flex align-items-center justify-content-center">
+                <i className="fa fa-instagram fa-2x text-primary"> </i>
+                <a href="https://instagram.com/_titilailai?igshid=w8a2o3sz4l5o"><strong>Instagram Live!</strong></a>
+            </p>
            <p className="text-center"><strong>#TítíláíláíWedding</strong></p>
         </div>
     )

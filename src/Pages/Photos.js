@@ -62,6 +62,66 @@ export default function Photos() {
                         <div className="carousel-item">
                             <img className="d-block w-100" src="images/17.webp" alt="Eleventh slide"/>
                         </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/1.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/2.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/3.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/4.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/5.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/6.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/7.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/8.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/9.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/10.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/11.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/12.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/13.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/14.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/15.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/16.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/17.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/18.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/19.png" alt="slide"/>
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="tinified/20.png" alt="slide"/>
+                        </div>
 
                     </div>
                 </div>

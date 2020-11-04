@@ -44,6 +44,7 @@ const Header = (props) => {
     })
     return (
         <div className="header site-navigation d-flex justify-content-center align-items-center">
+
             <ul className="d-flex flex-column flex-md-row flex-lg-row justify-content-center align-items-center">
                 <li><a href="/">#TÍTÍLÁÍLÁÍ WEDDING</a></li>
                 <li><a href="/story">OUR STORY</a></li>
@@ -59,6 +60,12 @@ const Header = (props) => {
                             <span></span>
                             <span></span>
                         </div>
+
+            <div className="nav-logo">
+                <div className="container d-flex">
+                    <img src="logo-1.png" alt="logo" />
+                </div>
+            </div>
         </div>
     )
 };

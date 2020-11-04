@@ -124,6 +124,17 @@ p {
 }
 
 .header {
+	.nav-logo {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		.container {
+			justify-content: center;
+		}
+		img {
+			width: 120px;
+		}
+	}
 	li {
 		a {
 			color: #19559e;
@@ -141,6 +152,9 @@ p {
 	}
 }
 @media screen and (min-width: 768px) {
+	.header .nav-logo .container {
+		justify-content: flex-start;
+	}
 	.site-navigation ul {
 		position: absolute;
 		left: 0;
@@ -182,7 +196,7 @@ p {
 	}
 	.cont {
 		height: 85vh;
-		background: url("images/home.webp") center / cover no-repeat;
+		background: url("tinified/3.png") center top / cover no-repeat;
 	}
 	.hero {
 		margin-top: 70px;
@@ -219,6 +233,15 @@ p {
 		font-size: 52px;
 	}
 }
+@media screen and (max-height: 800px) and (min-width: 768px) {
+	.home,
+	.church,
+	.reception {
+		.cont {
+			height: 100vh;
+		}
+	}
+}
 
 .footer {
 	box-shadow: 0 0 5px 0 #000;
@@ -229,6 +252,9 @@ p {
 			height: 30px;
 			margin: -5px 10px 0 10px;
 		}
+	}
+	i {
+		margin-right: 10px;
 	}
 }
 
@@ -331,7 +357,7 @@ p {
 
 .church {
 	.cont {
-		background: url("images/8.webp") top / cover no-repeat;
+		background: url("tinified/1.png") top / cover no-repeat;
 	}
 	.hero {
 		h1 {
@@ -347,6 +373,10 @@ p {
 	}
 	.church-map {
 		margin: 30px 0 0 0;
+		opacity: 0.7;
+		&:hover {
+			opacity: 1;
+		}
 	}
 	.church-details {
 		background: #19559e86;
@@ -373,6 +403,7 @@ p {
 
 @media screen and (max-width: 768px) {
 	.church .cont {
+		background: url("tinified/8.png") center top / cover no-repeat;
 		height: max-content;
 	}
 	.church .hero h1 {
