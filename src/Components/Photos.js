@@ -18,6 +18,7 @@ useEffect(() => {
     dots: true,
     loop: true,
     center: true,
+    smartSpeed: 1000,
     slideTransition: 'linear',
     responsive: {
     0: {
@@ -38,6 +39,8 @@ useEffect(() => {
         autoplay: true,
         dots: true,
         loop: true,
+        smartSpeed: 1000,
+        rtl: true,
         center: true,
         responsive: {
         0: {
