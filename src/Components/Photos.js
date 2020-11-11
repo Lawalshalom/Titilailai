@@ -20,6 +20,7 @@ useEffect(() => {
     center: true,
     smartSpeed: 1000,
     slideTransition: 'linear',
+    nav: true,
     responsive: {
     0: {
     items: 2
@@ -41,6 +42,7 @@ useEffect(() => {
         loop: true,
         smartSpeed: 1000,
         rtl: true,
+        nav: true,
         center: true,
         responsive: {
         0: {
