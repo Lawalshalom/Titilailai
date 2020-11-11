@@ -61,32 +61,34 @@ useEffect(() => {
     return (
         <>
             <div className="owl-carousel photo1-carousel overflow-hidden">
-                <img src="tinified/5.png" alt="" />
-                <img src="tinified/11.png" alt="" />
-                <img src="tinified/6.png" alt="" />
-                <img src="tinified/15.png" alt="" />
-                <img src="tinified/7.png" alt="" />
-                <img src="tinified/8.png" alt="" />
-                <img src="tinified/12.png" alt="" />
-                <img src="tinified/16.png" alt="" />
-                <img src="tinified/9.png" alt="" />
-                <img src="tinified/10.png" alt="" />
-                <img src="tinified/13.png" alt="" />
-                <img src="tinified/17.png" alt="" />
-                <img src="tinified/11.png" alt="" />
-                <img src="tinified/19.png" alt="" />
-                <img src="tinified/14.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134852/titilailai/5_eerxyn.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134856/titilailai/11_uwmdk4.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134852/titilailai/6_jdfail.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134870/titilailai/15_s9pwe2.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134860/titilailai/7_hecgan.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134858/titilailai/8_cg2t6w.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134861/titilailai/12_sfvga0.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134864/titilailai/16_o4oyqx.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134862/titilailai/9_ozmnpl.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134864/titilailai/18_e5ag6l.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134858/titilailai/10_amy8bg.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134864/titilailai/13_ib0jyp.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134866/titilailai/17_camfcj.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134856/titilailai/11_uwmdk4.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134869/titilailai/19_l25arc.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134863/titilailai/14_urstoq.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134868/titilailai/20_a5cz8v.png" alt="" />
             </div>
 
             <div className="owl-carousel photo2-carousel">
-                <img src="tinified/1.png" alt="" />
-                <img src="tinified/21.png" alt="" />
-                <img src="tinified/2.png" alt="" />
-                <img src="tinified/3.png" alt="" />
-                <img src="tinified/22.png" alt="" />
-                <img src="tinified/4.png" alt="" />
-                <img src="tinified/23.png" alt="" />
-                <img src="tinified/24.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134855/titilailai/1_pd03qw.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134873/titilailai/21_syoy3v.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134856/titilailai/2_ckgt8j.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134875/titilailai/23_mtfgyj.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134852/titilailai/3_qxhcg8.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134875/titilailai/22_vmpred.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134859/titilailai/4_ipgbhs.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134876/titilailai/24_chzd7s.png" alt="" />
             </div>
         </>
    )

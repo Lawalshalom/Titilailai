@@ -59,7 +59,7 @@ const Home = () => {
                                 <p>19. 12. 2020</p>
                                 <p className="text-primary">TIME</p>
                                 <p>10AM</p>
-                                <a href="#fgj">
+                                <a href="https://instagram.com/_titilailai?igshid=w8a2o3sz4l5o" target="_blank" rel="noopener noreferrer">
                                     <p className="d-flex align-items-center"><i className="fa fa-instagram fa-2x mr-2"></i><span>Follow the event live!</span></p>
                                 </a>
                                 <a target="_blank" rel="noopener noreferrer"href="https://goo.gl/maps/1EdLQ2S6ArVAQZyj7" className="btn btn-primary">Get Directions</a>
@@ -83,6 +83,9 @@ const Home = () => {
                     <p>19. 12. 2020</p>
                     <p className="text-primary">TIME</p>
                     <p>1PM</p>
+                    <a href="https://instagram.com/_titilailai?igshid=w8a2o3sz4l5o" target="_blank" rel="noopener noreferrer">
+                        <p className="d-flex align-items-center"><i className="fa fa-instagram fa-2x mr-2"></i><span>Follow the event live!</span></p>
+                    </a>
                     <a target="_blank" rel="noopener noreferrer"href="https://goo.gl/maps/2aFKhuxNuknS9xeA8" className="btn btn-primary">Get Directions</a>
                 </div>
             </div>
