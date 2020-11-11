@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from "../Components/Header";
+import Photos from '../Components/Photos';
 
 const Story = () => {
   return (
@@ -7,12 +8,11 @@ const Story = () => {
       <Header page="story"/>
 
       <div className="about d-flex flex-column justify-content-center align-items-center">
-        <h2  data-aos="fade-up-right">ABOUT US</h2>
         <h1  data-aos="fade-up-left">Our journey to forever</h1>
       </div>
 
       <div className="tinu">
-                <div className="top-logo text-center mt-2">
+                <div className="top-logo text-center mt-5 mb-5">
                     <img src="icons/Group4.png" alt="top-logo"/>
                 </div>
                 <img className="flower-1" src="icons/flowers2.png" alt="flowers" />
@@ -64,13 +64,11 @@ const Story = () => {
             </div>
 
 
-      <div className="top-logo text-center mt-2">
+      <div className="top-logo text-center mt-5 mb-5">
           <img src="icons/Group4.png" alt="top-logo"/>
       </div>
 
-      <div className="gallery" data-aos="fade-up" data-aos-delay="100">
-                <img className="w-100" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605125088/titilailai/Gallery_u2gkb5.png" alt="photos"/>
-      </div>
+      <Photos/>
 
       <div className="thanks container" data-aos="flip-up" data-aos-delay="100">
           <img className="w-100" src="icons/thanks.png" alt="thanks"/>

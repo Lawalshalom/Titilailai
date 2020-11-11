@@ -261,16 +261,10 @@
 		url("https://res.cloudinary.com/lawfirm1000/image/upload/v1605124829/titilailai/11_rs8abs.png")
 			center / cover no-repeat;
 
-	h2 {
-		font-family: "Airbnb Cereal App", sans-serif;
-		font-size: 16px;
-		margin-top: 15vh;
-	}
-
 	h1 {
 		font-family: "Dancing Script", sans-serif;
 		font-size: 80px;
-		margin-top: -1rem;
+		margin-top: 5rem;
 	}
 }
 .tinu {
@@ -371,4 +365,10 @@
 .back-to-top i:hover {
 	background: rgba(1, 104, 209, 1);
 	color: #fff;
+}
+
+.owl-carousel {
+	* {
+		overflow: hidden;
+	}
 }

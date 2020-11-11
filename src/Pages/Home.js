@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from "../Components/Header";
+import Photos from '../Components/Photos';
 
 const Home = () => {
     return (
@@ -29,7 +30,7 @@ const Home = () => {
                                 <p className="text-primary mt-5 mt-md-0 love-text">LOVE IN IT'S BEST FORM</p>
                                 <h3>Our journey to forever</h3>
                                 <p>​"In our case, God’s time is the best and when God isn’t ready, no man can force him to be. Timi and I attended the same secondary school, he was my senior, I didn’t as much as see him beyond “the head boy”, “Senior Timilehin Adeoti”. </p>
-                                <a href="/story" className="btn btn-primary">About us</a>
+                                <a href="/story" className="btn btn-primary">Our Story</a>
                             </div>
                         </div>
                         <div className="col-12 col-md-6"  data-aos="fade-left">
@@ -58,6 +59,9 @@ const Home = () => {
                                 <p>19. 12. 2020</p>
                                 <p className="text-primary">TIME</p>
                                 <p>10AM</p>
+                                <a href="#fgj">
+                                    <p className="d-flex align-items-center"><i className="fa fa-instagram fa-2x mr-2"></i><span>Follow the event live!</span></p>
+                                </a>
                                 <a target="_blank" rel="noopener noreferrer"href="https://goo.gl/maps/1EdLQ2S6ArVAQZyj7" className="btn btn-primary">Get Directions</a>
                             </div>
                         </div>
@@ -87,7 +91,7 @@ const Home = () => {
                 <img src="icons/Group16.png" alt="top-logo"/>
             </div>
 
-            <div className="gifts container d-flex justify-content-between" id="gifts"  data-aos="zoom-out">
+            <div className="gifts container d-flex justify-content-between mb-5" id="gifts"  data-aos="zoom-out">
                 <img className="flower" src="icons/flowers2.png" alt="flower"/>
                 <div className="d-flex flex-column align-items-center">
                     <h3 className="text-center">Did you come bearing gifts?</h3>
@@ -105,9 +109,7 @@ const Home = () => {
                 <img className="flower" src="icons/flowers23.png" alt="flower"/>
             </div>
 
-            <div className="gallery" data-aos="zoom-in" data-aos-delay="150">
-                <img className="w-100" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605125088/titilailai/Gallery_u2gkb5.png" alt="photos"/>
-            </div>
+            <Photos/>
 
             <div className="thanks container" data-aos="flip-up" data-aos-delay="300">
                 <img className="w-100" src="icons/thanks.png" alt="thanks"/>
