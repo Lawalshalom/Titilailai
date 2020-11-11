@@ -45,7 +45,7 @@ const Header = (props) => {
     return (
         <div className="header site-navigation d-flex justify-content-center align-items-center" id="header">
 
-            <ul className="justify-content-end align-items-center" data-aos="fade-down">
+            <ul className="justify-content-end align-items-center">
                 <div className="container d-flex flex-column nav-menu flex-md-row flex-lg-row justify-content-end">
                     <li><a href="/">#TÍTÍLÁÍLÁÍ</a></li>
                     <li><a href="/story">OUR STORY</a></li>
