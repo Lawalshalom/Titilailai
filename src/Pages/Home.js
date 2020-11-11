@@ -33,7 +33,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-12 col-md-6"  data-aos="fade-left">
-                            <img className="w-100" src="icons/pic-1.png" alt="prewedding" />
+                            <img className="w-100" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605125085/titilailai/pic-1_nitf1x.png" alt="prewedding" />
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const Home = () => {
                 <div className="container">
                     <div className="d-flex flex-column flex-md-row  align-items-center justify-content-center w-100 story-cont">
                         <div className="col-12 col-md-6"  data-aos="fade-right" data-aos-delay="100">
-                            <img className="w-100" src="icons/pic-2.png" alt="prewedding" />
+                            <img className="w-100" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605125088/titilailai/pic-2_tki8oi.png" alt="prewedding" />
                         </div>
 
                         <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
@@ -106,7 +106,7 @@ const Home = () => {
             </div>
 
             <div className="gallery" data-aos="zoom-in" data-aos-delay="150">
-                <img className="w-100" src="icons/Gallery.png" alt="photos"/>
+                <img className="w-100" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605125088/titilailai/Gallery_u2gkb5.png" alt="photos"/>
             </div>
 
             <div className="thanks container" data-aos="flip-up" data-aos-delay="300">

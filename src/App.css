@@ -175,8 +175,8 @@
   width: 100vw;
   left: 0;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(128, 0, 32, 0.7)), to(rgba(128, 0, 32, 0.6))), url("./tinified/10.png") center/cover no-repeat;
-  background: linear-gradient(to right, rgba(128, 0, 32, 0.7), rgba(128, 0, 32, 0.6)), url("./tinified/10.png") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(128, 0, 32, 0.7)), to(rgba(128, 0, 32, 0.6))), url("https://res.cloudinary.com/lawfirm1000/image/upload/v1605124830/titilailai/10_mo3fcr.png") center/cover no-repeat;
+  background: linear-gradient(to right, rgba(128, 0, 32, 0.7), rgba(128, 0, 32, 0.6)), url("https://res.cloudinary.com/lawfirm1000/image/upload/v1605124830/titilailai/10_mo3fcr.png") center/cover no-repeat;
 }
 
 .home h3 {
@@ -264,8 +264,8 @@
 .about {
   height: 32vh;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(1, 104, 209, 0.6)), to(rgba(1, 104, 209, 0.7))), url("./tinified/11.png") center/cover no-repeat;
-  background: linear-gradient(to right, rgba(1, 104, 209, 0.6), rgba(1, 104, 209, 0.7)), url("./tinified/11.png") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(1, 104, 209, 0.6)), to(rgba(1, 104, 209, 0.7))), url("https://res.cloudinary.com/lawfirm1000/image/upload/v1605124829/titilailai/11_rs8abs.png") center/cover no-repeat;
+  background: linear-gradient(to right, rgba(1, 104, 209, 0.6), rgba(1, 104, 209, 0.7)), url("https://res.cloudinary.com/lawfirm1000/image/upload/v1605124829/titilailai/11_rs8abs.png") center/cover no-repeat;
 }
 
 .about h2 {
