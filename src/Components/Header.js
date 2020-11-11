@@ -43,15 +43,16 @@ const Header = (props) => {
 
     })
     return (
-        <div className="header site-navigation d-flex justify-content-center align-items-center">
+        <div className="header site-navigation d-flex justify-content-center align-items-center" id="header">
 
-            <ul className="d-flex flex-column flex-md-row flex-lg-row justify-content-center align-items-center">
-                <li><a href="/">#TÍTÍLÁÍLÁÍ WEDDING</a></li>
-                <li><a href="/story">OUR STORY</a></li>
-                <li><a href="/church">CHURCH WEDDING</a></li>
-                <li><a href="/reception">RECEPTION</a></li>
-                <li><a href="/gifts">GIFTS</a></li>
-                <li><a href="/photos">PHOTOS</a></li>
+            <ul className="justify-content-end align-items-center" data-aos="fade-down">
+                <div className="container d-flex flex-column nav-menu flex-md-row flex-lg-row justify-content-end">
+                    <li><a href="/">#TÍTÍLÁÍLÁÍ</a></li>
+                    <li><a href="/story">OUR STORY</a></li>
+                    <li><a href="/#church">CHURCH WEDDING</a></li>
+                    <li><a href="/#reception">RECEPTION</a></li>
+                    <li><a href="/#gifts">GIFTS</a></li>
+                </div>
             </ul>
 
             <div className="hamburger-menu d-md-none d-lg-none">
@@ -63,7 +64,7 @@ const Header = (props) => {
 
             <div className="nav-logo">
                 <div className="container d-flex">
-                    <img src="logo-1.png" alt="logo" />
+                    <a href="/"><img src="icons/logo.png" alt="logo" /></a>
                 </div>
             </div>
         </div>

@@ -1,26 +1,13 @@
-@font-face {
-  font-family: "MuseoW01-700";
-  src: url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.eot");
-  src: url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.woff") format("woff"), url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.svg#MuseoW01-700") format("svg");
-}
-
 * {
   overflow-x: hidden;
-  font-family: MuseoW01-700;
-}
-
-h1,
-h2,
-h3,
-p {
-  overflow: hidden;
+  font-family: "Airbnb Cereal App", sans-serif;
 }
 
 .nav-bar {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 1;
   width: 100%;
   padding: 20px 0;
 }
@@ -43,7 +30,7 @@ p {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #19559e;
+  background: #fff;
   border-radius: 10px;
   opacity: 1;
   left: 0;
@@ -91,14 +78,15 @@ p {
   top: 20px;
   left: -320px;
   z-index: 9;
-  width: 320px;
-  max-width: calc(100% - 120px);
+  width: 300px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 30px 15px;
-  background: rgba(255, 255, 255, 0.6);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(1, 104, 209, 0.5)), to(rgba(128, 0, 32, 0.3)));
+  background: linear-gradient(to right, rgba(1, 104, 209, 0.5), rgba(128, 0, 32, 0.3));
   list-style: none;
+  border-radius: 30px;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
@@ -115,9 +103,8 @@ p {
   display: block;
   padding: 16px 0;
   font-size: 14px;
-  font-weight: 700;
-  line-height: 1;
-  color: #19559e;
+  font-family: "Airbnb Cereal App", sans-serif;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: color 0.35s;
   transition: color 0.35s;
@@ -128,6 +115,7 @@ p {
   width: 100%;
   left: 0;
   top: 10px;
+  z-index: 2;
 }
 
 .header .nav-logo .container {
@@ -142,20 +130,16 @@ p {
 }
 
 .header li a {
-  color: #19559e;
+  color: #fff;
 }
 
 .header li a.active {
-  color: #8c2110;
-}
-
-.header li a.active:hover {
-  color: #8c2110;
+  text-decoration: underline;
 }
 
 .header li a:hover {
   text-decoration: none;
-  color: #b86e69;
+  color: #0168d1;
 }
 
 @media screen and (min-width: 768px) {
@@ -166,386 +150,240 @@ p {
   }
   .site-navigation ul {
     position: absolute;
-    left: 0;
     top: 15px;
+    left: 0;
     width: 100%;
     max-width: 100%;
     margin: 20px 5px;
     padding: 0;
     background: transparent;
   }
-  .home .site-navigation ul li a,
-  .church .site-navigation ul li a,
-  .reception .site-navigation ul li a {
-    color: #fff !important;
-    font-weight: 700;
-  }
-  .home .site-navigation ul li a.active,
-  .church .site-navigation ul li a.active,
-  .reception .site-navigation ul li a.active {
-    color: #8c2110 !important;
-  }
-  .home .site-navigation ul li a:hover,
-  .church .site-navigation ul li a:hover,
-  .reception .site-navigation ul li a:hover {
-    color: #b86e69 !important;
-  }
   .site-navigation ul li a {
     width: 100%;
     padding: 20px 0;
-    color: #19559e;
+    color: #fff;
   }
 }
 
 .site-navigation ul li a:hover {
-  color: #b86e69;
+  color: #ce8c88;
 }
 
-.home .hamburger-menu span,
-.church .hamburger-menu span,
-.reception .hamburger-menu span {
-  background: #fff;
+.home {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(128, 0, 32, 0.7)), to(rgba(128, 0, 32, 0.6))), url("./tinified/10.png") center/cover no-repeat;
+  background: linear-gradient(to right, rgba(128, 0, 32, 0.7), rgba(128, 0, 32, 0.6)), url("./tinified/10.png") center/cover no-repeat;
 }
 
-.home .cont,
-.church .cont,
-.reception .cont {
-  height: 85vh;
-  background: url("tinified/3.png") center top/cover no-repeat;
-}
-
-.home .hero,
-.church .hero,
-.reception .hero {
-  margin-top: 70px;
-}
-
-.home .hero h1,
-.church .hero h1,
-.reception .hero h1 {
-  text-shadow: 0 0 5px #fff;
-  color: #8c2110;
-  font-size: 80px;
-  margin-left: 20px;
-}
-
-.home .hero h1 span,
-.church .hero h1 span,
-.reception .hero h1 span {
-  color: #19559e;
-}
-
-.home .hero h3,
-.church .hero h3,
-.reception .hero h3 {
-  color: #8c2110;
-  background: transparent;
-  margin-left: 35px;
-  z-index: 9;
-}
-
-.home .hero svg,
-.church .hero svg,
-.reception .hero svg {
-  margin-top: -45px;
-  margin-left: 25px;
-  width: 32ch;
-  stroke-width: 0;
-  fill-opacity: 0.7;
-  stroke: #4b87cf;
-  stroke-opacity: 0.7;
-  fill: #4b87cf;
-}
-
-@media screen and (max-width: 560px) {
-  .home .hero h1 {
-    font-size: 52px;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 768px) {
-  .home .cont,
-  .church .cont,
-  .reception .cont {
-    height: 100vh;
-  }
-}
-
-.footer {
-  -webkit-box-shadow: 0 0 5px 0 #000;
-          box-shadow: 0 0 5px 0 #000;
-}
-
-.footer p {
-  margin-top: 20px;
-}
-
-.footer p svg {
-  width: 30px;
-  height: 30px;
-  margin: -5px 10px 0 10px;
-}
-
-.footer i {
-  margin-right: 10px;
-}
-
-/*****************
-	STORY
-******************/
-.story h1 {
-  text-shadow: 0 0 5px #fff;
-  margin-top: 100px;
-  font-family: Lobster;
-  font-weight: bolder;
-  font-size: 180px;
-  color: #8c2110;
-  overflow: hidden;
-}
-
-.story h1 span {
-  font-family: Lobster;
-  font-weight: lighter;
-  color: #19559e;
-  font-size: 80px;
-}
-
-.story h1.title-story {
-  margin-top: -165px;
-  margin-left: 130px;
-}
-
-.story .tinu p,
-.story .timi p {
-  font-family: "Josefin Slab";
-  font-weight: 400;
+.home h3 {
+  font-family: "Airbnb Cereal App", sans-serif;
   font-size: 16px;
-  color: #8c2110;
+  line-height: 20.83px;
+  letter-spacing: 5px;
+  margin: 30px 0;
 }
 
-.story .tinu h3,
-.story .timi h3 {
-  text-align: end;
-  color: #19559e;
-}
-
-.story .timi p {
-  color: #01244e;
-}
-
-.story .timi h3 {
-  color: #8c2110;
-}
-
-.story .carousel {
+.home h1 {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 80px;
   margin: 20px 0;
 }
 
-.story .carousel-fade .carousel-inner .item {
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
+.home .home-logo {
+  position: absolute;
+  bottom: 3rem;
 }
 
-.story .carousel-fade .carousel-inner .item,
-.story .carousel-fade .carousel-inner .active.left,
-.story .carousel-fade .carousel-inner .active.right {
-  opacity: 0;
-}
-
-.story .carousel-fade .carousel-inner .active,
-.story .carousel-fade .carousel-inner a .next.left,
-.story .carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.story .carousel-fade .carousel-inner .next,
-.story .carousel-fade .carousel-inner .prev,
-.story .carousel-fade .carousel-inner .active.left,
-.story .carousel-fade .carousel-inner .active.right {
+.pagerest {
+  top: 100vh;
+  position: absolute;
   left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  width: 100%;
 }
 
-.story .carousel-fade .carousel-inner img {
-  border-radius: 50%;
-  width: 100px;
-  height: 350px;
+.pagerest .flower-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 17rem;
 }
 
-@media screen and (max-width: 768px) {
-  .story h1 {
-    font-size: 100px;
-  }
-  .story h1 span {
-    font-size: 45px;
-  }
-  .story h1.title-story {
-    margin-top: -95px;
-    margin-left: 85px;
-  }
+.pagerest .story-cont {
+  margin-top: 7rem;
 }
 
-.church .cont {
-  background: url("tinified/1.png") top/cover no-repeat;
+.pagerest .text-cont {
+  width: 70%;
 }
 
-.church .hero h1 {
-  font-family: "Montserrat";
-  color: #8c2110;
-  font-size: 60px;
-  text-shadow: 0 0 5px #fff;
+.pagerest h3 {
+  color: #800020;
+  font-family: "Dancing Script", sans-serif;
+  margin: 20px 0;
+  font-size: 30px;
 }
 
-.church .hero h1 span {
-  font-family: "Montserrat";
-  color: #fff;
+.pagerest .love-text {
+  font-size: 10px;
 }
 
-.church .church-map {
-  margin: 30px 0 0 0;
-  opacity: 0.7;
-}
-
-.church .church-map:hover {
-  opacity: 1;
-}
-
-.church .church-details {
-  background: #19559e86;
-  color: #fff;
-  border-radius: 50px;
-  width: 450px;
-  -webkit-box-shadow: 0 0 15px 0 #000;
-          box-shadow: 0 0 15px 0 #000;
-  padding: 30px 10px;
-  margin-top: 50px;
-}
-
-.church .church-details h3 {
-  color: #fff;
-  font-family: "Montserrat";
-}
-
-.church .church-details h3 span,
-.church .church-details h3 strong {
-  color: #8c2110;
-  text-shadow: 0 0 15px #fff;
-}
-
-.church .church-details h3 .city {
-  color: #8c2110;
-}
-
-@media screen and (max-width: 768px) {
-  .church .cont {
-    background: url("tinified/8.png") center top/cover no-repeat;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  .church .hero h1 {
-    font-size: 50px;
-  }
-  .church .church-details {
-    width: 350px;
-  }
-}
-
-/*****************
-	RECEPTION
-******************/
-.reception .cont {
-  background: url("images/home.webp") center/cover no-repeat;
-}
-
-.reception .hero h1 {
-  font-family: Lobster;
-  color: #fff;
-  font-size: 80px;
-}
-
-.reception .hero h1 span {
-  font-family: Lobster;
-  color: #8c2110;
-}
-
-.reception .hero .reception-details h3 {
-  font-family: Lobster;
-  color: #8c2110;
-}
-
-.reception .hero .reception-details h3 strong {
-  font-family: Lobster;
-  color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .reception .cont {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    padding-bottom: 20px;
-  }
+.church .flower-2 {
+  position: absolute;
+  right: 0;
+  width: 17rem;
 }
 
 .gifts {
-  margin-top: 40px;
+  color: #fff;
+  background: #800020;
 }
 
-.gifts .gift-details {
-  width: 70%;
-  margin: 60px auto;
+.gifts h3 {
+  color: #fff;
 }
 
-.gifts .gift-details h1 {
-  color: #8c2110;
+.gifts .flower {
+  width: 100%;
+}
+
+.gifts .underline {
+  width: 40vw;
+  margin: 10px;
+  border-top: 2px solid #b0445f;
+}
+
+.gallery,
+.thanks {
+  margin: 5rem auto;
+}
+
+.about {
+  height: 32vh;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(1, 104, 209, 0.6)), to(rgba(1, 104, 209, 0.7))), url("./tinified/11.png") center/cover no-repeat;
+  background: linear-gradient(to right, rgba(1, 104, 209, 0.6), rgba(1, 104, 209, 0.7)), url("./tinified/11.png") center/cover no-repeat;
+}
+
+.about h2 {
+  font-family: "Airbnb Cereal App", sans-serif;
+  font-size: 16px;
+  margin-top: 15vh;
+}
+
+.about h1 {
+  font-family: "Dancing Script", sans-serif;
   font-size: 80px;
-  font-family: Lobster;
+  margin-top: -1rem;
 }
 
-.gifts .gift-details p,
-.gifts .gift-details a {
-  font-family: Lobster;
-  color: #002e5d;
+.tinu .flower-1 {
+  position: absolute;
+  width: 17rem;
+  opacity: 0.5;
+  top: 30vh;
+}
+
+.tinu p {
+  font-family: "Airbnb Cereal App", sans-serif;
+  font-size: 14px;
+}
+
+.tinu h3 {
+  color: #800020;
+  font-family: "Dancing Script", sans-serif;
   margin: 20px 0;
   font-size: 30px;
-  font-family: "Cookie";
 }
 
-.gifts .gift-details a {
-  text-decoration: underline;
-  color: #8c2110;
+.tinu .love-text {
+  font-size: 10px;
 }
 
-.gifts svg {
-  width: 100px;
-  stroke-width: 0;
-  fill-opacity: 1;
-  stroke: #fdca22;
-  stroke-opacity: 1;
-  fill: #fdca22;
+.tinu p + p {
+  color: #800020;
 }
 
-/************
-	PHOTOS
-************/
-.gallery {
-  margin: 20vh 0;
+.tinu h3 ~ p::before,
+.tinu p ~ p::before {
+  content: "|";
+  color: #800020;
+  margin-right: 20px;
 }
 
-.gallery .carousel {
+.timi .flower-2 {
+  position: absolute;
+  width: 17rem;
+  right: 0;
+}
+
+.timi p {
+  font-family: "Airbnb Cereal App", sans-serif;
+  font-size: 14px;
+}
+
+.timi h3 {
+  color: #0168d1;
+  font-family: "Dancing Script", sans-serif;
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.timi .love-text {
+  color: #800020;
+  font-size: 10px;
+}
+
+.timi h3 ~ p::before,
+.timi p ~ p::before {
+  content: "|";
+  color: #0168d1;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .home h1,
+  .about h1 {
+    font-size: 45px;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  z-index: 9;
+  height: 50px;
+  width: 50px;
+}
+
+.back-to-top i {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #0168d1;
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.gallery .carousel-control-prev span,
-.gallery .carousel-control-next span {
-  z-index: 2;
-  background-color: #002e5d;
+.back-to-top i:hover {
+  background: #0168d1;
+  color: #fff;
 }
 /*# sourceMappingURL=App.css.map */

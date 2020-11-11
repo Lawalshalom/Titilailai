@@ -1,35 +1,13 @@
-@font-face {
-	font-family: "MuseoW01-700";
-	src: url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.eot");
-	src: url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.eot?#iefix")
-			format("embedded-opentype"),
-		url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.woff2")
-			format("woff2"),
-		url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.woff")
-			format("woff"),
-		url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.ttf")
-			format("truetype"),
-		url("//db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.svg#MuseoW01-700")
-			format("svg");
-}
-
 * {
 	overflow-x: hidden;
-	font-family: MuseoW01-700;
-}
-
-h1,
-h2,
-h3,
-p {
-	overflow: hidden;
+	font-family: "Airbnb Cereal App", sans-serif;
 }
 
 .nav-bar {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 9999;
+	z-index: 1;
 	width: 100%;
 	padding: 20px 0;
 }
@@ -50,7 +28,7 @@ p {
 		position: absolute;
 		height: 2px;
 		width: 100%;
-		background: #19559e;
+		background: #fff;
 		border-radius: 10px;
 		opacity: 1;
 		left: 0;
@@ -95,12 +73,16 @@ p {
 	top: 20px;
 	left: -320px;
 	z-index: 9;
-	width: 320px;
-	max-width: calc(100% - 120px);
+	width: 300px;
 	height: max-content;
 	padding: 30px 15px;
-	background: rgba(255, 255, 255, 0.6);
+	background: linear-gradient(
+		to right,
+		rgba(1, 104, 209, 0.5),
+		rgba(128, 0, 32, 0.3)
+	);
 	list-style: none;
+	border-radius: 30px;
 	transition: all 0.35s;
 }
 
@@ -116,9 +98,8 @@ p {
 	display: block;
 	padding: 16px 0;
 	font-size: 14px;
-	font-weight: 700;
-	line-height: 1;
-	color: #19559e;
+	font-family: "Airbnb Cereal App", sans-serif;
+	color: #fff;
 	text-decoration: none;
 	transition: color 0.35s;
 }
@@ -129,6 +110,7 @@ p {
 		width: 100%;
 		left: 0;
 		top: 10px;
+		z-index: 2;
 		.container {
 			justify-content: center;
 		}
@@ -139,16 +121,13 @@ p {
 	}
 	li {
 		a {
-			color: #19559e;
+			color: #fff;
 			&.active {
-				color: #8c2110;
-				&:hover {
-					color: #8c2110;
-				}
+				text-decoration: underline;
 			}
 			&:hover {
 				text-decoration: none;
-				color: #b86e69;
+				color: rgba(1, 104, 209, 1);
 			}
 		}
 	}
@@ -159,346 +138,235 @@ p {
 	}
 	.site-navigation ul {
 		position: absolute;
-		left: 0;
 		top: 15px;
+		left: 0;
 		width: 100%;
 		max-width: 100%;
 		margin: 20px 5px;
 		padding: 0;
 		background: transparent;
 	}
-	.home .site-navigation ul li a,
-	.church .site-navigation ul li a,
-	.reception .site-navigation ul li a {
-		color: #fff !important;
-		font-weight: 700;
-		&.active {
-			color: #8c2110 !important;
-		}
-		&:hover {
-			color: #b86e69 !important;
-		}
-	}
+
 	.site-navigation ul li a {
 		width: 100%;
 		padding: 20px 0;
-		color: #19559e;
+		color: #fff;
 	}
 }
 
 .site-navigation ul li a:hover {
-	color: #b86e69;
+	color: #ce8c88;
 }
 
-.home,
-.church,
-.reception {
-	.hamburger-menu span {
-		background: #fff;
+.home {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	left: 0;
+	color: #fff;
+	background: linear-gradient(
+			to right,
+			rgba(128, 0, 32, 0.7),
+			rgba(128, 0, 32, 0.6)
+		),
+		url("./tinified/10.png") center / cover no-repeat;
+	h3 {
+		font-family: "Airbnb Cereal App", sans-serif;
+		font-size: 16px;
+		line-height: 20.83px;
+		letter-spacing: 5px;
+		margin: 30px 0;
 	}
-	.cont {
-		height: 85vh;
-		background: url("tinified/3.png") center top / cover no-repeat;
-	}
-	.hero {
-		margin-top: 70px;
-		h1 {
-			text-shadow: 0 0 5px #fff;
-			color: #8c2110;
-			font-size: 80px;
-			margin-left: 20px;
-			span {
-				color: #19559e;
-			}
-		}
-		h3 {
-			color: #8c2110;
-			background: transparent;
-			margin-left: 35px;
-			z-index: 9;
-		}
-		svg {
-			margin-top: -45px;
-			margin-left: 25px;
-			width: 32ch;
-			stroke-width: 0;
-			fill-opacity: 0.7;
-			stroke: rgb(75, 135, 207);
-			stroke-opacity: 0.7;
-			fill: rgb(75, 135, 207);
-		}
-	}
-}
-
-@media screen and (max-width: 560px) {
-	.home .hero h1 {
-		font-size: 52px;
-	}
-}
-@media screen and (max-height: 800px) and (min-width: 768px) {
-	.home,
-	.church,
-	.reception {
-		.cont {
-			height: 100vh;
-		}
-	}
-}
-
-.footer {
-	box-shadow: 0 0 5px 0 #000;
-	p {
-		margin-top: 20px;
-		svg {
-			width: 30px;
-			height: 30px;
-			margin: -5px 10px 0 10px;
-		}
-	}
-	i {
-		margin-right: 10px;
-	}
-}
-
-/*****************
-	STORY
-******************/
-.story {
 	h1 {
-		text-shadow: 0 0 5px #fff;
-		margin-top: 100px;
-		font-family: Lobster;
-		font-weight: bolder;
-		font-size: 180px;
-		color: #8c2110;
-		overflow: hidden;
-
-		span {
-			font-family: Lobster;
-			font-weight: lighter;
-			color: #19559e;
-			font-size: 80px;
-		}
-		&.title-story {
-			margin-top: -165px;
-			margin-left: 130px;
-		}
-	}
-	.tinu,
-	.timi {
-		p {
-			font-family: "Josefin Slab";
-			font-weight: 400;
-			font-size: 16px;
-			color: #8c2110;
-		}
-		h3 {
-			text-align: end;
-			color: #19559e;
-		}
-	}
-	.timi {
-		p {
-			color: #01244e;
-		}
-		h3 {
-			color: #8c2110;
-		}
-	}
-	.carousel {
+		font-family: "Dancing Script", sans-serif;
+		font-size: 80px;
 		margin: 20px 0;
 	}
-	.carousel-fade {
-		.carousel-inner {
-			.item {
-				transition-property: opacity;
-			}
 
-			.item,
-			.active.left,
-			.active.right {
-				opacity: 0;
-			}
-
-			.active,
-			a .next.left,
-			.prev.right {
-				opacity: 1;
-			}
-
-			.next,
-			.prev,
-			.active.left,
-			.active.right {
-				left: 0;
-				transform: translate3d(0, 0, 0);
-			}
-			img {
-				border-radius: 50%;
-				width: 100px;
-				height: 350px;
-			}
-		}
+	.home-logo {
+		position: absolute;
+		bottom: 3rem;
 	}
 }
+.pagerest {
+	top: 100vh;
+	position: absolute;
+	left: 0;
+	width: 100%;
 
-@media screen and (max-width: 768px) {
-	.story {
-		h1 {
-			font-size: 100px;
-			span {
-				font-size: 45px;
-			}
-			&.title-story {
-				margin-top: -95px;
-				margin-left: 85px;
-			}
-		}
+	.flower-1 {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 17rem;
+	}
+
+	.story-cont {
+		margin-top: 7rem;
+	}
+	.text-cont {
+		width: 70%;
+	}
+
+	h3 {
+		color: rgba(128, 0, 32, 1);
+		font-family: "Dancing Script", sans-serif;
+		margin: 20px 0;
+		font-size: 30px;
+	}
+	.love-text {
+		font-size: 10px;
 	}
 }
-
 .church {
-	.cont {
-		background: url("tinified/1.png") top / cover no-repeat;
-	}
-	.hero {
-		h1 {
-			font-family: "Montserrat";
-			color: #8c2110;
-			font-size: 60px;
-			text-shadow: 0 0 5px #fff;
-			span {
-				font-family: "Montserrat";
-				color: #fff;
-			}
-		}
-	}
-	.church-map {
-		margin: 30px 0 0 0;
-		opacity: 0.7;
-		&:hover {
-			opacity: 1;
-		}
-	}
-	.church-details {
-		background: #19559e86;
-		color: #fff;
-		border-radius: 50px;
-		width: 450px;
-		box-shadow: 0 0 15px 0 #000;
-		padding: 30px 10px;
-		margin-top: 50px;
-		h3 {
-			color: #fff;
-			font-family: "Montserrat";
-			span,
-			strong {
-				color: #8c2110;
-				text-shadow: 0 0 15px #fff;
-			}
-			.city {
-				color: #8c2110;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.church .cont {
-		background: url("tinified/8.png") center top / cover no-repeat;
-		height: max-content;
-	}
-	.church .hero h1 {
-		font-size: 50px;
-	}
-	.church .church-details {
-		width: 350px;
-	}
-}
-
-/*****************
-	RECEPTION
-******************/
-.reception {
-	.cont {
-		background: url("images/home.webp") center / cover no-repeat;
-	}
-	.hero {
-		h1 {
-			font-family: Lobster;
-			color: #fff;
-			font-size: 80px;
-			span {
-				font-family: Lobster;
-				color: #8c2110;
-			}
-		}
-		.reception-details h3 {
-			font-family: Lobster;
-			color: #8c2110;
-			strong {
-				font-family: Lobster;
-				color: #fff;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.reception .cont {
-		height: max-content;
-		padding-bottom: 20px;
+	.flower-2 {
+		position: absolute;
+		right: 0;
+		width: 17rem;
 	}
 }
 
 .gifts {
-	margin-top: 40px;
-	.gift-details {
-		width: 70%;
-		margin: 60px auto;
-		h1 {
-			color: #8c2110;
-			font-size: 80px;
-			font-family: Lobster;
-		}
-		p,
-		a {
-			font-family: Lobster;
-			color: #002e5d;
-			margin: 20px 0;
-			font-size: 30px;
-			font-family: "Cookie";
-		}
-		a {
-			text-decoration: underline;
-			color: #8c2110;
-		}
+	color: #fff;
+	background: rgba(128, 0, 32, 1);
+
+	h3 {
+		color: #fff;
 	}
-	svg {
-		width: 100px;
-		stroke-width: 0;
-		fill-opacity: 1;
-		stroke: rgb(253, 202, 34);
-		stroke-opacity: 1;
-		fill: rgb(253, 202, 34);
+
+	.flower {
+		width: 100%;
+	}
+	.underline {
+		width: 40vw;
+		margin: 10px;
+		border-top: 2px solid rgba(176, 68, 95, 1);
 	}
 }
 
-/************
-	PHOTOS
-************/
-.gallery {
-	margin: 20vh 0;
+.gallery,
+.thanks {
+	margin: 5rem auto;
+}
 
-	.carousel {
-		display: flex;
-		justify-content: center;
+.about {
+	height: 32vh;
+	color: #fff;
+	background: linear-gradient(
+			to right,
+			rgba(1, 104, 209, 0.6),
+			rgba(1, 104, 209, 0.7)
+		),
+		url("./tinified/11.png") center / cover no-repeat;
+
+	h2 {
+		font-family: "Airbnb Cereal App", sans-serif;
+		font-size: 16px;
+		margin-top: 15vh;
 	}
-	.carousel-control-prev,
-	.carousel-control-next {
-		span {
-			z-index: 2;
-			background-color: #002e5d;
+
+	h1 {
+		font-family: "Dancing Script", sans-serif;
+		font-size: 80px;
+		margin-top: -1rem;
+	}
+}
+.tinu {
+	.flower-1 {
+		position: absolute;
+		width: 17rem;
+		opacity: 0.5;
+		top: 30vh;
+	}
+	p {
+		font-family: "Airbnb Cereal App", sans-serif;
+		font-size: 14px;
+	}
+	h3 {
+		color: rgba(128, 0, 32, 1);
+		font-family: "Dancing Script", sans-serif;
+		margin: 20px 0;
+		font-size: 30px;
+	}
+	.love-text {
+		font-size: 10px;
+	}
+
+	p + p {
+		color: rgba(128, 0, 32, 1);
+	}
+	h3 ~ p,
+	p ~ p {
+		&::before {
+			content: "|";
+			color: rgba(128, 0, 32, 1);
+			margin-right: 20px;
 		}
 	}
+}
+.timi {
+	.flower-2 {
+		position: absolute;
+		width: 17rem;
+		right: 0;
+	}
+	p {
+		font-family: "Airbnb Cereal App", sans-serif;
+		font-size: 14px;
+	}
+	h3 {
+		color: rgba(1, 104, 209, 1);
+		font-family: "Dancing Script", sans-serif;
+		margin: 20px 0;
+		font-size: 30px;
+	}
+	.love-text {
+		color: rgba(128, 0, 32, 1);
+		font-size: 10px;
+	}
+	h3 ~ p,
+	p ~ p {
+		&::before {
+			content: "|";
+			color: rgba(1, 104, 209, 1);
+			margin-right: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.home,
+	.about {
+		h1 {
+			font-size: 45px;
+		}
+	}
+}
+.back-to-top {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	display: none;
+	z-index: 9;
+	height: 50px;
+	width: 50px;
+}
+
+.back-to-top i {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	background: rgba(1, 104, 209, 1);
+	color: #fff;
+	transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+	background: rgba(1, 104, 209, 1);
+	color: #fff;
 }

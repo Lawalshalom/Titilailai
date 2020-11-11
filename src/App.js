@@ -2,10 +2,6 @@ import React from "react";
 import { Route, Switch } from 'react-router-dom';
 import Home from "./Pages/Home";
 import Story from "./Pages/Story";
-import Church from "./Pages/Church";
-import Reception from './Pages/Reception';
-import Gifts from "./Pages/Gifts";
-import Photos from "./Pages/Photos";
 import Error from "./Error";
 import './App.css';
 import AOS from 'aos';
@@ -43,14 +39,6 @@ componentDidMount(){
                 <Home {...renderprops} />} exact />
               <Route path="/story" render={renderprops =>
                 <Story {...renderprops} />} />
-              <Route path="/reception" render={renderprops =>
-                <Reception {...renderprops} />} />
-              <Route path="/church" render={renderprops =>
-                <Church {...renderprops} />} />
-              <Route path="/gifts" render={renderprops =>
-                  <Gifts {...renderprops} />} />
-                <Route path="/photos" render={renderprops =>
-                  <Photos {...renderprops} />} />
               <Route render={renderprops =>
                 <Error {...renderprops} />} />
           </Switch>
