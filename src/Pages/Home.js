@@ -97,7 +97,7 @@ const Home = () => {
             <div className="gifts container d-flex justify-content-between mb-5" id="gifts"  data-aos="zoom-out">
                 <img className="flower" src="icons/flowers2.png" alt="flower"/>
                 <div className="d-flex flex-column align-items-center">
-                    <h3 className="text-center">Did you come bearing gifts?</h3>
+                    <h3 className="text-center">Do you come bearing gifts?</h3>
                     <p className="text-center">We covet your prayers towards the success of the day's event and our marriage. We would also be delighted if you honour us with your presence. If you wish to give a gift, please make it a monetary gift. You may do so with your card
                         <a href="https://paylink.ng/timiadeoti" target="_blank" rel="noreferrer noopener"> here</a>
                     </p>
