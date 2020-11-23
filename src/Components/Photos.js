@@ -86,14 +86,32 @@ useEffect(() => {
             </div>
 
             <div className="owl-carousel photo2-carousel">
-                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134855/titilailai/1_pd03qw.png" alt="" />
-                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134873/titilailai/21_syoy3v.png" alt="" />
-                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134856/titilailai/2_ckgt8j.png" alt="" />
-                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134875/titilailai/23_mtfgyj.png" alt="" />
-                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134852/titilailai/3_qxhcg8.png" alt="" />
-                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134875/titilailai/22_vmpred.png" alt="" />
-                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134859/titilailai/4_ipgbhs.png" alt="" />
-                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1605134876/titilailai/24_chzd7s.png" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143115/titilailai/26_t98wif.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143115/titilailai/27_m8ppx1.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143117/titilailai/34_ixcqw3.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143117/titilailai/35_hx9o0l.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143115/titilailai/24_otswrr.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143117/titilailai/31_l0g4s7.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143115/titilailai/25_xyuhjg.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143116/titilailai/32_gbv4fr.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143116/titilailai/29_qxywgw.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143116/titilailai/28_n3qo0d.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143116/titilailai/33_rwjwke.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143115/titilailai/30_qc4cdm.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143114/titilailai/23_dymsep.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143114/titilailai/22_ff3pln.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143113/titilailai/14_dvidto.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143114/titilailai/19_hufkuj.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143113/titilailai/17_tpdpil.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143113/titilailai/18_s1klj7.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143112/titilailai/12_w84ukk.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143112/titilailai/11_ywghhh.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143112/titilailai/9_lbecwi.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143112/titilailai/13_cajqtc.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143111/titilailai/10_akx5mg.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143110/titilailai/6_lsgkyf.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143110/titilailai/3_tydhyl.webp" alt="" />
+                <img src="https://res.cloudinary.com/lawfirm1000/image/upload/v1606143109/titilailai/1_yqfazi.webp" alt="" />
             </div>
         </>
    )
